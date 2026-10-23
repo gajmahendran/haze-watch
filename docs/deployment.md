@@ -11,9 +11,11 @@ at build time; API routes run on demand. Node 20 or later.
 3. Optional persistence: create a Supabase project, run `supabase/migrations/0001_init.sql` in the SQL
    editor, then set `SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY` (server-only).
 4. Optional scheduled ingestion: set `CRON_SECRET` (16+ characters). `vercel.json` schedules
-   `/api/ingest` hourly; Vercel sends the secret as a bearer token. Hobby plans only allow daily crons,
-   so either upgrade or call the endpoint from another scheduler:
-   `curl -H "Authorization: Bearer $CRON_SECRET" https://your-site/api/ingest`.
+   `/api/ingest` once a day (00:10 UTC, give or take an hour), because Vercel's Hobby plan fails any
+   deployment whose cron runs more often. Vercel sends the secret as a bearer token. For hourly
+   ingestion, either move to Pro and set the schedule to `10 * * * *`, or call the endpoint hourly from
+   another scheduler: `curl -H "Authorization: Bearer $CRON_SECRET" https://your-site/api/ingest`.
+   The live pages do not depend on ingestion; they read the sources directly with caching.
 5. Put the site behind the platform firewall or a CDN rule for `/api/*`. The in-app rate limiter is
    per instance and best-effort.
 
