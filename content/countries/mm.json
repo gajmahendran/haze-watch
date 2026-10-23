@@ -2,19 +2,61 @@
   "code": "MM",
   "status": "partial",
   "agencies": [
-    { "name": "Environmental Conservation Department (ECD)", "role": "Myanmar's counterpart to Thailand's Pollution Control Department in cooperation on haze monitoring and data sharing.", "url": "https://www.khaosodenglish.com/news/international/2026/05/19/thai-myanmar-plan-to-link-platforms-and-share-haze-data/", "sourceIds": ["s1"] }
+    {
+      "name": "Environmental Conservation Department (ECD)",
+      "role": "Myanmar's counterpart to Thailand's Pollution Control Department in cooperation on haze monitoring and data sharing.",
+      "url": "https://www.khaosodenglish.com/news/international/2026/05/19/thai-myanmar-plan-to-link-platforms-and-share-haze-data/",
+      "sourceIds": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Department of Meteorology and Hydrology (DMH)",
+      "role": "Has an air quality monitoring section; set up an automatic hourly PM2.5 monitor in Yangon on 26 March 2018.",
+      "url": "https://apmmn.org/static/conference/2019/presentation/23.%20Environmental%20Monitoring%20Activities%20in%20Myanmar.pdf",
+      "sourceIds": [
+        "s3"
+      ]
+    }
   ],
   "nationalIndex": null,
   "monitoring": [
-    { "text": "In May 2026 Thailand's PCD director-general cited Myanmar's limited air quality monitoring infrastructure and incomplete environmental databases as major challenges, and Thailand agreed to help Myanmar build online haze reporting.", "sourceIds": ["s1"] },
-    { "text": "According to Myanmar government data cited by PCD, Myanmar reduced wildfire hotspots by 12 percent in 2025 compared with 2024.", "sourceIds": ["s1"] }
+    {
+      "text": "In May 2026 Thailand's PCD director-general cited Myanmar's limited air quality monitoring infrastructure and incomplete environmental databases as major challenges, and Thailand agreed to help Myanmar build online haze reporting.",
+      "sourceIds": [
+        "s1"
+      ]
+    },
+    {
+      "text": "According to Myanmar government data cited by PCD, Myanmar reduced wildfire hotspots by 12 percent in 2025 compared with 2024.",
+      "sourceIds": [
+        "s1"
+      ]
+    },
+    {
+      "text": "A 2019 DMH presentation describes one automatic PM2.5 site in Yangon, running since March 2018 with hourly sampling, and 41 acid deposition stations. It does not say whether the PM2.5 data is published.",
+      "sourceIds": [
+        "s3"
+      ]
+    }
   ],
   "seasonalPattern": [
-    { "text": "ASMC's alerts for the northern ASEAN and Mekong region typically run from about December to May.", "sourceIds": ["s2"] }
+    {
+      "text": "ASMC's alerts for the northern ASEAN and Mekong region typically run from about December to May.",
+      "sourceIds": [
+        "s2"
+      ]
+    }
   ],
   "healthContext": [],
   "policy": [
-    { "date": "2026-05-19", "text": "Myanmar and Thailand agreed to integrate monitoring platforms and share air pollution data under a long-term regional strategy.", "sourceIds": ["s1"] }
+    {
+      "date": "2026-05-19",
+      "text": "Myanmar and Thailand agreed to integrate monitoring platforms and share air pollution data under a long-term regional strategy.",
+      "sourceIds": [
+        "s1"
+      ]
+    }
   ],
   "dataAccess": [],
   "openQuestions": [
@@ -22,8 +64,33 @@
     "No official public data source has been identified."
   ],
   "sources": [
-    { "id": "s1", "title": "Thai-Myanmar plan to link platforms and share haze data", "publisher": "Khaosod English", "url": "https://www.khaosodenglish.com/news/international/2026/05/19/thai-myanmar-plan-to-link-platforms-and-share-haze-data/", "publishedDate": "2026-05-19", "accessedDate": "2026-10-23", "kind": "journalism" },
-    { "id": "s2", "title": "ASMC Alerts", "publisher": "ASEAN Specialised Meteorological Centre", "url": "https://asmc.asean.org/asmc-alerts/", "publishedDate": null, "accessedDate": "2026-10-23", "kind": "intergovernmental" }
+    {
+      "id": "s1",
+      "title": "Thai-Myanmar plan to link platforms and share haze data",
+      "publisher": "Khaosod English",
+      "url": "https://www.khaosodenglish.com/news/international/2026/05/19/thai-myanmar-plan-to-link-platforms-and-share-haze-data/",
+      "publishedDate": "2026-05-19",
+      "accessedDate": "2026-10-23",
+      "kind": "journalism"
+    },
+    {
+      "id": "s2",
+      "title": "ASMC Alerts",
+      "publisher": "ASEAN Specialised Meteorological Centre",
+      "url": "https://asmc.asean.org/asmc-alerts/",
+      "publishedDate": null,
+      "accessedDate": "2026-10-23",
+      "kind": "intergovernmental"
+    },
+    {
+      "id": "s3",
+      "title": "Environmental Monitoring Activities in Myanmar (APMMN partners meeting presentation)",
+      "publisher": "Department of Meteorology and Hydrology, Myanmar, via Asia-Pacific Mercury Monitoring Network",
+      "url": "https://apmmn.org/static/conference/2019/presentation/23.%20Environmental%20Monitoring%20Activities%20in%20Myanmar.pdf",
+      "publishedDate": "2019-08",
+      "kind": "official",
+      "accessedDate": "2026-10-23"
+    }
   ],
   "lastReviewed": "2026-10-23"
 }

@@ -64,7 +64,17 @@
       ]
     }
   ],
-  "impacts": [],
+  "impacts": [
+    {
+      "kind": "other",
+      "certainty": "reported",
+      "text": "Malay Mail, reading DOE's APIMS website, reported unhealthy API in 16 places across nine states at 9am on 2 October 2023, highest in Cheras (164), and still in eight places at 5pm on 18 October, highest in Klang (159).",
+      "sourceIds": [
+        "s4",
+        "s5"
+      ]
+    }
+  ],
   "responses": [
     {
       "actor": "National Environment Agency, Singapore",
@@ -76,9 +86,9 @@
   ],
   "policy": [],
   "openQuestions": [
-    "Malaysian API values and locations for October 2023 have not been sourced.",
-    "Any school or public-event measures in Malaysia or Singapore are not documented here.",
-    "The full duration of the episode, including any later recurrence, is not established."
+    "Malaysian API values for October 2023 are quoted from press reports of APIMS and kept in the text, not listed as measurements.",
+    "The full duration of the episode, including any later recurrence, is not established.",
+    "Whether Malaysia or Singapore closed schools or cancelled events in October 2023 has not been established."
   ],
   "imagery": [],
   "sources": [
@@ -108,6 +118,24 @@
       "publishedDate": "2023-10-08",
       "accessedDate": "2026-10-23",
       "kind": "official"
+    },
+    {
+      "id": "s4",
+      "title": "Air quality in 16 areas in nine states hits unhealthy levels as of 9am",
+      "publisher": "Malay Mail",
+      "url": "https://www.malaymail.com/news/malaysia/2023/10/02/air-quality-in-16-areas-in-nine-states-hits-unhealthy-levels-as-of-9am/93924",
+      "publishedDate": "2023-10-02",
+      "kind": "journalism",
+      "accessedDate": "2026-10-23"
+    },
+    {
+      "id": "s5",
+      "title": "Haze: Eight areas in Peninsular Malaysia record unhealthy API as of 5pm",
+      "publisher": "Malay Mail",
+      "url": "https://www.malaymail.com/news/malaysia/2023/10/18/haze-eight-areas-in-peninsular-malaysia-record-unhealthy-api-as-of-5pm/97016",
+      "publishedDate": "2023-10-18",
+      "kind": "journalism",
+      "accessedDate": "2026-10-23"
     }
   ],
   "lastReviewed": "2026-10-23"

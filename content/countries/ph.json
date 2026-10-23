@@ -2,30 +2,85 @@
   "code": "PH",
   "status": "partial",
   "agencies": [
-    { "name": "Department of Environment and Natural Resources, Environmental Management Bureau (DENR-EMB)", "role": "Operates PM2.5 monitoring stations in Metro Manila and other regions and issues air quality advisories.", "url": "https://tribune.net.ph/2026/09/14/15-metro-manila-stations-record-good-pm25-aqi-amid-haze", "sourceIds": ["s1"] }
+    {
+      "name": "Department of Environment and Natural Resources, Environmental Management Bureau (DENR-EMB)",
+      "role": "Operates PM2.5 monitoring stations in Metro Manila and other regions and issues air quality advisories.",
+      "url": "https://tribune.net.ph/2026/09/14/15-metro-manila-stations-record-good-pm25-aqi-amid-haze",
+      "sourceIds": [
+        "s1"
+      ]
+    }
   ],
   "nationalIndex": {
-    "name": "Philippine Air Quality Index (PM2.5)",
-    "description": "DENR-EMB reports station readings on a Philippine AQI for PM2.5 with categories that include 'Good' and 'Fair'. The full band table has not been confirmed here.",
-    "sourceIds": ["s1"]
+    "name": "Philippine Air Quality Index for PM2.5",
+    "description": "DENR Administrative Order 2020-14 set the PM2.5 breakpoints, amending DAO 2013-13: Good 0 to 25, Fair 25.1 to 35, Unhealthy for sensitive groups 35.1 to 45, Very unhealthy 45.1 to 55, Acutely unhealthy 55.1 to 90 and Emergency above 91, as reported by Enviliance. The averaging period and units are not stated in that report.",
+    "sourceIds": [
+      "s2"
+    ]
   },
   "monitoring": [
-    { "text": "At noon on 14 September 2026, 15 of 16 Metro Manila stations read 'Good' and one read 'Fair'. Outside Metro Manila, 26 stations read 'Good', five 'Fair' and three had no data.", "sourceIds": ["s1"] }
+    {
+      "text": "At noon on 14 September 2026, 15 of 16 Metro Manila stations read 'Good' and one read 'Fair'. Outside Metro Manila, 26 stations read 'Good', five 'Fair' and three had no data.",
+      "sourceIds": [
+        "s1"
+      ]
+    }
   ],
   "seasonalPattern": [
-    { "text": "In September 2026 DENR-EMB said haze over parts of the country was possibly associated with smoke from ongoing fires in Kalimantan carried by winds.", "sourceIds": ["s1"] }
+    {
+      "text": "In September 2026 DENR-EMB said haze over parts of the country was possibly associated with smoke from ongoing fires in Kalimantan carried by winds.",
+      "sourceIds": [
+        "s1"
+      ]
+    }
   ],
   "healthContext": [
-    { "text": "DENR-EMB advised minimising prolonged outdoor activity in visibly hazy areas and wearing a well-fitting mask, preferably N95 or equivalent, outdoors in noticeably hazy areas.", "sourceIds": ["s1"] }
+    {
+      "text": "DENR-EMB advised minimising prolonged outdoor activity in visibly hazy areas and wearing a well-fitting mask, preferably N95 or equivalent, outdoors in noticeably hazy areas.",
+      "sourceIds": [
+        "s1"
+      ]
+    },
+    {
+      "text": "Under DAO 2020-14, people with respiratory disease should limit outdoor exertion from the 'Unhealthy for sensitive groups' band, and everyone should stay indoors at 'Emergency', with vehicle use limited to emergencies.",
+      "sourceIds": [
+        "s2"
+      ]
+    }
   ],
-  "policy": [],
+  "policy": [
+    {
+      "text": "DENR Administrative Order 2020-14 established the PM2.5 breakpoints of the Philippine AQI, developed by DENR-EMB with a technical working group.",
+      "sourceIds": [
+        "s2"
+      ],
+      "date": "2020"
+    }
+  ],
   "dataAccess": [],
   "openQuestions": [
-    "The full Philippine AQI band table and averaging period have not been confirmed from DENR-EMB.",
+    "The DAO 2020-14 bands come from a secondary summary. The order itself, its averaging period and the gap between 90 and 91 have not been checked against DENR's copy.",
     "Public data access for DENR-EMB stations has not been checked."
   ],
   "sources": [
-    { "id": "s1", "title": "15 Metro Manila stations record good PM2.5 AQI amid haze", "publisher": "Daily Tribune (Philippines)", "url": "https://tribune.net.ph/2026/09/14/15-metro-manila-stations-record-good-pm25-aqi-amid-haze", "publishedDate": "2026-09-14", "accessedDate": "2026-10-23", "kind": "journalism" }
+    {
+      "id": "s1",
+      "title": "15 Metro Manila stations record good PM2.5 AQI amid haze",
+      "publisher": "Daily Tribune (Philippines)",
+      "url": "https://tribune.net.ph/2026/09/14/15-metro-manila-stations-record-good-pm25-aqi-amid-haze",
+      "publishedDate": "2026-09-14",
+      "accessedDate": "2026-10-23",
+      "kind": "journalism"
+    },
+    {
+      "id": "s2",
+      "title": "Philippines revises PM2.5 Air Quality Index (DAO 2020-14)",
+      "publisher": "Enviliance ASIA",
+      "url": "https://enviliance.com/regions/southeast-asia/ph/report_4059",
+      "publishedDate": null,
+      "kind": "journalism",
+      "accessedDate": "2026-10-23"
+    }
   ],
   "lastReviewed": "2026-10-23"
 }

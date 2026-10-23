@@ -19,7 +19,7 @@
     "VN",
     "KH"
   ],
-  "summary": "Fires in Kalimantan and Sumatra during an El Niño year have produced the region's most serious haze since 2019. ASMC raised the southern region to Alert Level 3 on 26 August. Malaysia declared an emergency in Serian on 4 September, Brunei's PSI exceeded 100 in all districts on 5 September, and Singapore's 24-hour PSI was unhealthy island-wide on 15 September for the first time since 2019. Haze returned in October: Malaysia closed schools in Kuala Lumpur, Putrajaya and five states on 9 October, and Singapore's 24-hour PSI reached 186 on 15 October. This record is being updated as the season continues.",
+  "summary": "Fires in Kalimantan and Sumatra during an El Niño year have produced the region's most serious haze since 2019. ASMC raised the southern region to Alert Level 3 on 26 August. Malaysia declared an emergency in Serian on 4 September, Brunei's PSI exceeded 100 in all districts on 5 September, and Singapore's 24-hour PSI was unhealthy island-wide on 15 September for the first time since 2019. Haze returned in October: Malaysia closed schools in Kuala Lumpur, Putrajaya and five states on 9 October and again in several states on 13 October, Singapore's 24-hour PSI reached 192 on 9 October, and NEA began serving preventive notices on seven Indonesian companies under its haze law. Readings eased to 88 to 114 on 19 October, with NEA expecting haze to return. This record is being updated as the season continues.",
   "summarySourceIds": [
     "s1",
     "s2",
@@ -27,7 +27,10 @@
     "s4",
     "s5",
     "s6",
-    "s8"
+    "s8",
+    "s14",
+    "s15",
+    "s16"
   ],
   "measurements": [
     {
@@ -97,6 +100,19 @@
     },
     {
       "country": "SG",
+      "location": "Singapore (upper end of the island-wide range)",
+      "metric": "24-hour PSI",
+      "value": 114,
+      "unit": "index (no unit)",
+      "averagingPeriod": "24-hour",
+      "observedAt": "2026-10-19T18:00+08:00",
+      "sourceIds": [
+        "s16"
+      ],
+      "note": "Range 88 to 114 from NEA's evening update, as reported by Little Big Red Dot."
+    },
+    {
+      "country": "SG",
       "location": "West region, Singapore",
       "metric": "24-hour PSI",
       "value": 142,
@@ -150,6 +166,14 @@
       "text": "On 9 October schools were closed in Kuala Lumpur, Putrajaya, Johor, Malacca, Negeri Sembilan, Pahang and Selangor, affecting about two million students, Al Jazeera reported.",
       "sourceIds": [
         "s5"
+      ]
+    },
+    {
+      "kind": "other",
+      "certainty": "reported",
+      "text": "On 13 October in-person classes were suspended in all schools in Johor, Melaka, Negeri Sembilan and Putrajaya and in parts of Selangor and Pahang, announced by the Education Minister, SAYS reported. Pasir Gudang's API was 174 that day.",
+      "sourceIds": [
+        "s14"
       ]
     },
     {
@@ -217,6 +241,20 @@
       "text": "Raised the southern ASEAN region to Alert Level 2 on 3 August and Alert Level 3 on 26 August 2026.",
       "sourceIds": [
         "s2"
+      ]
+    },
+    {
+      "actor": "National Environment Agency, Singapore",
+      "text": "Began serving preventive measure notices under the Transboundary Haze Pollution Act on seven Indonesian companies whose land NEA linked to fires using satellite and weather data. The notices require firefighting, no burning and prevention plans; they are not a finding of liability.",
+      "sourceIds": [
+        "s15"
+      ]
+    },
+    {
+      "actor": "Minister for Sustainability and the Environment, Singapore",
+      "text": "Warned on 16 October that the haze could reach the hazardous range (PSI above 300) in the coming weeks.",
+      "sourceIds": [
+        "s15"
       ]
     }
   ],
@@ -345,6 +383,33 @@
       "publishedDate": "2019-09-24",
       "accessedDate": "2026-10-23",
       "kind": "journalism"
+    },
+    {
+      "id": "s14",
+      "title": "Schools in Johor, Melaka, Negeri Sembilan and Putrajaya to close 13 Oct due to haze",
+      "publisher": "SAYS",
+      "url": "https://says.com/my/news/schools-in-johor-melaka-negeri-sembilan-putrajaya-to-close-13-oct-due-to-haze",
+      "publishedDate": "2026-10-12",
+      "kind": "journalism",
+      "accessedDate": "2026-10-23"
+    },
+    {
+      "id": "s15",
+      "title": "Grace Fu warns haze could turn hazardous as NEA serves notices on seven Indonesian firms",
+      "publisher": "Little Big Red Dot",
+      "url": "https://littlebigreddot.com/?p=28784",
+      "publishedDate": "2026-10-17",
+      "kind": "journalism",
+      "accessedDate": "2026-10-23"
+    },
+    {
+      "id": "s16",
+      "title": "NEA forecasts PSI of 90 to 160 for 20 October as Kalimantan haze may return by Thursday",
+      "publisher": "Little Big Red Dot",
+      "url": "https://littlebigreddot.com/?p=29075",
+      "publishedDate": "2026-10-20",
+      "kind": "journalism",
+      "accessedDate": "2026-10-23"
     }
   ],
   "lastReviewed": "2026-10-23"

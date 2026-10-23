@@ -2,33 +2,102 @@
   "code": "BN",
   "status": "partial",
   "agencies": [
-    { "name": "Department of Environment, Parks and Recreation (JASTRe)", "role": "Publishes PSI readings by district. During the 2026 haze it issued updates five times a day.", "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/09/05/haze-blankets-brunei-as-all-districts-hit-unhealthy-levels", "sourceIds": ["s1"] },
-    { "name": "Ministry of Health", "role": "Issues public health advice during haze.", "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/09/05/haze-blankets-brunei-as-all-districts-hit-unhealthy-levels", "sourceIds": ["s1"] }
+    {
+      "name": "Department of Environment, Parks and Recreation (JASTRe)",
+      "role": "Publishes PSI readings by district. During the 2026 haze it issued updates five times a day.",
+      "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/09/05/haze-blankets-brunei-as-all-districts-hit-unhealthy-levels",
+      "sourceIds": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Ministry of Health",
+      "role": "Issues public health advice during haze.",
+      "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/09/05/haze-blankets-brunei-as-all-districts-hit-unhealthy-levels",
+      "sourceIds": [
+        "s1"
+      ]
+    }
   ],
   "nationalIndex": {
     "name": "Pollutant Standards Index (Brunei)",
     "description": "JASTRe reports a PSI for each of the four districts (Brunei-Muara, Belait, Tutong, Temburong). PM2.5 concentrations have been included in PSI reporting since 1 September 2026, according to Borneo Bulletin. It is a separate index from Singapore's PSI.",
-    "sourceIds": ["s1"]
+    "sourceIds": [
+      "s1"
+    ]
   },
   "monitoring": [
-    { "text": "On 5 September 2026 all four districts recorded PSI above 100, with Belait at 164 and Brunei-Muara at 155 at 9am, as reported by Borneo Bulletin.", "sourceIds": ["s1"] }
+    {
+      "text": "On 5 September 2026 all four districts recorded PSI above 100, with Belait at 164 and Brunei-Muara at 155 at 9am, as reported by Borneo Bulletin.",
+      "sourceIds": [
+        "s1"
+      ]
+    },
+    {
+      "text": "During hazy periods JASTRe issues PSI updates five times a day, at 7am, 9am, 11am, 2pm and 4pm, and publishes them on its website and Instagram (@jastre.bn). On 20 October 2026 all four districts read between 19 and 32 at 9am.",
+      "sourceIds": [
+        "s3"
+      ]
+    }
   ],
   "seasonalPattern": [
-    { "text": "MSS reports that in 1997 southeasterly and southwesterly winds carried smoke haze to Brunei, among other countries.", "sourceIds": ["s2"] }
+    {
+      "text": "MSS reports that in 1997 southeasterly and southwesterly winds carried smoke haze to Brunei, among other countries.",
+      "sourceIds": [
+        "s2"
+      ]
+    }
   ],
   "healthContext": [
-    { "text": "During the 2026 haze the Ministry of Health advised reducing strenuous or prolonged outdoor activity, with children, older people and pregnant women limiting it and people with heart or respiratory conditions avoiding it.", "sourceIds": ["s1"] }
+    {
+      "text": "During the 2026 haze the Ministry of Health advised reducing strenuous or prolonged outdoor activity, with children, older people and pregnant women limiting it and people with heart or respiratory conditions avoiding it.",
+      "sourceIds": [
+        "s1"
+      ]
+    }
   ],
   "policy": [],
-  "dataAccess": [],
+  "dataAccess": [
+    {
+      "name": "JASTRe website (env.gov.bn)",
+      "url": "https://www.env.gov.bn",
+      "accessMethod": "web_only",
+      "note": "The latest PSI update is posted as an image on the home page. No table, download or API was found when checked on 23 October 2026, so readings cannot be ingested."
+    }
+  ],
   "openQuestions": [
     "The averaging period and band thresholds of Brunei's PSI have not been confirmed from JASTRe.",
-    "Whether JASTRe offers machine-readable data is unknown. Its website has not been checked.",
+    "JASTRe publishes PSI as images on its website and Instagram; no machine-readable route was found. Brunei's PSI cannot be shown live without one.",
     "Brunei's haze policy framework has not been documented here."
   ],
   "sources": [
-    { "id": "s1", "title": "Haze blankets Brunei as all districts hit unhealthy levels", "publisher": "The Star (Malaysia), from Borneo Bulletin/ANN", "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/09/05/haze-blankets-brunei-as-all-districts-hit-unhealthy-levels", "publishedDate": "2026-09-05", "accessedDate": "2026-10-23", "kind": "journalism" },
-    { "id": "s2", "title": "Severe Transboundary Smoke Haze in 1997", "publisher": "Meteorological Service Singapore", "url": "https://www.weather.gov.sg/severe-transboundary-smoke-haze-in-1997/", "publishedDate": null, "accessedDate": "2026-10-23", "kind": "official" }
+    {
+      "id": "s1",
+      "title": "Haze blankets Brunei as all districts hit unhealthy levels",
+      "publisher": "The Star (Malaysia), from Borneo Bulletin/ANN",
+      "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/09/05/haze-blankets-brunei-as-all-districts-hit-unhealthy-levels",
+      "publishedDate": "2026-09-05",
+      "accessedDate": "2026-10-23",
+      "kind": "journalism"
+    },
+    {
+      "id": "s2",
+      "title": "Severe Transboundary Smoke Haze in 1997",
+      "publisher": "Meteorological Service Singapore",
+      "url": "https://www.weather.gov.sg/severe-transboundary-smoke-haze-in-1997/",
+      "publishedDate": null,
+      "accessedDate": "2026-10-23",
+      "kind": "official"
+    },
+    {
+      "id": "s3",
+      "title": "Rainfall keeps haze levels good across Brunei",
+      "publisher": "The Star (Malaysia), from Borneo Bulletin/ANN",
+      "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/20/rainfall-keeps-haze-levels-good-across-brunei",
+      "publishedDate": "2026-10-20",
+      "kind": "journalism",
+      "accessedDate": "2026-10-23"
+    }
   ],
   "lastReviewed": "2026-10-23"
 }
