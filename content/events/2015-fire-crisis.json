@@ -1,0 +1,219 @@
+{
+  "slug": "2015-fire-crisis",
+  "title": "2015: Indonesia's fire crisis and hazardous air in Singapore",
+  "yearStart": 2015,
+  "yearEnd": 2015,
+  "datesLabel": "June to October 2015 (fires); late September peak in Singapore",
+  "dateStart": "2015-06",
+  "dateEnd": "2015-10",
+  "type": "transboundary",
+  "severity": "severe",
+  "severityBasis": "The World Bank calls 2015 Indonesia's 'fire crisis' and estimates costs of at least US$16.1 billion. Singapore's 24-hour PSI entered the 'hazardous' range (above 300) on 25 September 2015, and all primary and secondary schools closed that day.",
+  "status": "verified",
+  "countries": [
+    "ID",
+    "SG"
+  ],
+  "summary": "Fires burned across Indonesia between June and October 2015. The Indonesian government reported 2.6 million hectares burned, about a third of it peatland, according to the World Bank, which estimated the cost to Indonesia at no less than US$16.1 billion, 1.9 percent of GDP. Smoke reached Singapore, where the 24-hour PSI rose into the hazardous range in the early hours of 25 September and the Ministry of Education closed all primary and secondary schools.",
+  "summarySourceIds": [
+    "s1",
+    "s2",
+    "s3"
+  ],
+  "measurements": [
+    {
+      "country": "SG",
+      "location": "Singapore (national reading)",
+      "metric": "24-hour PSI",
+      "value": 309,
+      "unit": "index (no unit)",
+      "averagingPeriod": "24-hour",
+      "observedAt": "2015-09-25T04:00+08:00",
+      "sourceIds": [
+        "s2"
+      ],
+      "note": "As reported by The Star."
+    },
+    {
+      "country": "SG",
+      "location": "Singapore (national reading)",
+      "metric": "24-hour PSI",
+      "value": 334,
+      "unit": "index (no unit)",
+      "averagingPeriod": "24-hour",
+      "observedAt": "2015-09-25T06:00+08:00",
+      "sourceIds": [
+        "s2"
+      ],
+      "note": "As reported by The Star. NASA's Scientific Visualization Studio cites a year high of 341 at 5am the same day without naming the averaging period, so that figure is not listed."
+    }
+  ],
+  "fireWeatherContext": [
+    {
+      "text": "The World Bank reports the government figure of 2.6 million hectares burned between June and October 2015, and that about 33 percent of the burned area was peatland.",
+      "sourceIds": [
+        "s1"
+      ]
+    },
+    {
+      "text": "NASA reported that more than 94,000 fires had burned across Indonesia by October 2015.",
+      "sourceIds": [
+        "s3"
+      ]
+    },
+    {
+      "text": "Using GFED estimates, the World Bank put the fires' emissions at roughly 1,750 million tonnes of CO2 equivalent, close to Indonesia's estimated annual economy-wide emissions of 1,800 million tonnes. It calls this a best, if uncertain, estimate.",
+      "sourceIds": [
+        "s1"
+      ]
+    }
+  ],
+  "impacts": [
+    {
+      "kind": "economic",
+      "certainty": "estimated",
+      "text": "The World Bank estimated the cost to Indonesia at no less than US$16.1 billion (IDR 221 trillion), equal to 1.9 percent of 2015 GDP. It excludes long-term health effects and regional losses.",
+      "sourceIds": [
+        "s1"
+      ]
+    },
+    {
+      "kind": "health",
+      "certainty": "reported",
+      "text": "The World Bank cites 19 deaths attributed to haze and more than 500,000 cases of acute respiratory infection in Indonesia.",
+      "sourceIds": [
+        "s1"
+      ]
+    },
+    {
+      "kind": "other",
+      "certainty": "reported",
+      "text": "In October 2015, 24,773 schools and about 4.7 million students in Indonesia were affected by closures of up to 34 days, according to the World Bank.",
+      "sourceIds": [
+        "s1"
+      ]
+    },
+    {
+      "kind": "other",
+      "certainty": "reported",
+      "text": "Singapore closed all primary and secondary schools on 25 September 2015, the first such closure for haze.",
+      "sourceIds": [
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "kind": "other",
+      "certainty": "reported",
+      "text": "Malaysia's Education Ministry closed all schools in Peninsular Malaysia except Kelantan on 5 and 6 October 2015, Malay Mail reported, when the API in Shah Alam reached 308 at 10am on 4 October.",
+      "sourceIds": [
+        "s5"
+      ]
+    },
+    {
+      "kind": "other",
+      "certainty": "reported",
+      "text": "Later in October closures returned: 3,029 schools on 20 October, 2,528 on 21 October and 4,778 schools with about 2.7 million students on 22 October, across eight states, two federal territories and four Sarawak districts, according to Education Ministry figures reported by Malay Mail.",
+      "sourceIds": [
+        "s6"
+      ]
+    }
+  ],
+  "responses": [
+    {
+      "actor": "Ministry of Education, Singapore",
+      "text": "Closed all primary and secondary schools on Friday 25 September 2015 because of worsening haze, announced the previous evening.",
+      "sourceIds": [
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "actor": "Ministry of Education, Malaysia",
+      "text": "Ordered school closures by state and district based on API readings in October 2015, monitoring hourly before deciding on Kelantan, Sabah and Sarawak.",
+      "sourceIds": [
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "policy": [
+    {
+      "date": "2015-01-20",
+      "text": "Earlier in the year, Indonesia deposited its instrument of ratification of the ASEAN Agreement on Transboundary Haze Pollution, approved by its parliament through Law No. 26 of 2014. With this, all ten ASEAN member states were parties.",
+      "sourceIds": [
+        "s4"
+      ]
+    }
+  ],
+  "openQuestions": [
+    "Malaysian API values for 2015 come from press reports and are kept in the text. The API is the highest of six sub-indices with different averaging periods (24 hours for particles, 1 or 8 hours for gases), so a press figure cannot be pinned to one averaging period.",
+    "NEA's own record of the 2015 peak (and of the 3-hour PSI quoted in some reports) has not been checked."
+  ],
+  "imagery": [
+    {
+      "description": "Satellite view of Singapore and the surrounding region under thick haze on 24 September 2015, from MODIS on NASA's Aqua satellite.",
+      "url": "https://svs.gsfc.nasa.gov/vis/a030000/a030600/a030699/singapore_smog_24_1080p_print.jpg",
+      "pageUrl": "https://svs.gsfc.nasa.gov/30699",
+      "credit": "NASA Goddard Space Flight Center Scientific Visualization Studio (visualisations by Amy Moran and Marit Jentoft-Nilsen)",
+      "licenceNote": "NASA asks that this imagery be credited to NASA's Goddard Space Flight Center and links its reproduction guidelines from the page."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "The Cost of Fire: An Economic Analysis of Indonesia's 2015 Fire Crisis",
+      "publisher": "World Bank",
+      "url": "https://documents1.worldbank.org/curated/pt/776101467990969768/pdf/103668-BRI-Cost-of-Fires-Knowledge-Note-PUBLIC-ADD-NEW-SERIES-Indonesia-Sustainable-Landscapes-Knowledge-Note.pdf",
+      "publishedDate": "2016-02",
+      "accessedDate": "2026-10-23",
+      "kind": "intergovernmental"
+    },
+    {
+      "id": "s2",
+      "title": "Singapore schools close for first time as haze hits hazardous levels",
+      "publisher": "The Star (Malaysia)",
+      "url": "https://thestar.com.my/news/regional/2015/09/25/singapore-schools-close-1st-time-haze",
+      "publishedDate": "2015-09-25",
+      "accessedDate": "2026-10-23",
+      "kind": "journalism"
+    },
+    {
+      "id": "s3",
+      "title": "Hazardous Air Quality Conditions in Singapore",
+      "publisher": "NASA Scientific Visualization Studio",
+      "url": "https://svs.gsfc.nasa.gov/30699",
+      "publishedDate": "2015-11-27",
+      "accessedDate": "2026-10-23",
+      "kind": "official"
+    },
+    {
+      "id": "s4",
+      "title": "Indonesia Deposits Instrument of Ratification of the ASEAN Agreement on Transboundary Haze Pollution",
+      "publisher": "ASEAN Haze Portal (ASEAN Secretariat)",
+      "url": "https://hazeportal.asean.org/?p=2655",
+      "publishedDate": "2015-01-20",
+      "accessedDate": "2026-10-23",
+      "kind": "intergovernmental"
+    },
+    {
+      "id": "s5",
+      "title": "Schools to be closed for next two days as haze worsens",
+      "publisher": "Malay Mail",
+      "url": "https://www.malaymail.com/news/malaysia/2015/10/04/schools-to-be-closed-for-next-two-days-as-haze-worsens/981363",
+      "publishedDate": "2015-10-04",
+      "accessedDate": "2026-10-23",
+      "kind": "journalism"
+    },
+    {
+      "id": "s6",
+      "title": "Schools to close for fourth day as haze causes 'very unhealthy' pollution levels",
+      "publisher": "Malay Mail",
+      "url": "https://www.malaymail.com/news/malaysia/2015/10/21/schools-to-close-for-fourth-day-as-haze-causes-very-unhealthy-pollution-lev/990923",
+      "publishedDate": "2015-10-21",
+      "accessedDate": "2026-10-23",
+      "kind": "journalism"
+    }
+  ],
+  "lastReviewed": "2026-10-23"
+}

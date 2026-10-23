@@ -1,0 +1,39 @@
+{
+  "slug": "2024-research-agenda",
+  "title": "2024: no major southern episode found; smoke season in northern Thailand",
+  "yearStart": 2024,
+  "yearEnd": 2024,
+  "datesLabel": "Calendar year 2024",
+  "dateStart": "2024",
+  "dateEnd": "2024",
+  "type": "unclear",
+  "severity": "unrated",
+  "severityBasis": "Not rated. The sources opened do not establish a notable transboundary haze episode in the southern ASEAN region in 2024. The northern Thailand smoke season is documented only by journalism without official concentration data.",
+  "status": "research_agenda",
+  "countries": ["TH", "SG"],
+  "summary": "This year is on the research agenda, not a confirmed regional crisis. Malay Mail reported in September 2026 that haze had not pushed Singapore's 24-hour PSI into the unhealthy range since October 2023, which implies no unhealthy haze day there in 2024. In the north, Global Voices reported that Chiang Mai's air quality was among the world's worst from late March 2024, with officials counting about 500 hotspots in Chiang Mai in April and over 6,000 in neighbouring Laos and Myanmar.",
+  "summarySourceIds": ["s1", "s2"],
+  "measurements": [],
+  "fireWeatherContext": [
+    { "text": "ASMC's alert log shows the southern ASEAN dry season advisory ending on 14 October 2024 and the northern dry season advisory ending on 23 May 2024.", "sourceIds": ["s3"] }
+  ],
+  "impacts": [
+    { "kind": "health", "certainty": "reported", "text": "Global Voices reported that over 30,000 people in Chiang Mai were treated at a local hospital for PM2.5-related illnesses in the first quarter of 2024.", "sourceIds": ["s2"] }
+  ],
+  "responses": [
+    { "actor": "Chiang Mai provincial authorities", "text": "Authorised work-from-home arrangements for 9 to 11 April 2024 and advised local administrations to set up clean air rooms, according to Global Voices.", "sourceIds": ["s2"] }
+  ],
+  "policy": [],
+  "openQuestions": [
+    "Official PM2.5 data from Thailand's Pollution Control Department for the 2024 northern season has not been sourced.",
+    "Whether any Malaysian or Indonesian locations recorded unhealthy haze readings in 2024 has not been checked.",
+    "The cross-border share of Chiang Mai's smoke is not established; the hotspot counts in Laos and Myanmar are reported, not attributed."
+  ],
+  "imagery": [],
+  "sources": [
+    { "id": "s1", "title": "Singapore haze tips air quality into unhealthy range for first time since 2023", "publisher": "Malay Mail", "url": "https://www.malaymail.com/amp/news/singapore/2026/09/04/singapore-haze-tips-air-quality-into-unhealthy-range-for-first-time-since-2023/233833", "publishedDate": "2026-09-04", "accessedDate": "2026-10-23", "kind": "journalism" },
+    { "id": "s2", "title": "Rising public frustration in Thailand over Chiang Mai's air pollution crisis", "publisher": "Global Voices", "url": "https://globalvoices.org/2024/04/12/rising-public-frustration-in-thailand-over-chiang-mais-air-pollution-crisis/", "publishedDate": "2024-04-12", "accessedDate": "2026-10-23", "kind": "journalism" },
+    { "id": "s3", "title": "ASMC Alerts", "publisher": "ASEAN Specialised Meteorological Centre", "url": "https://asmc.asean.org/asmc-alerts/", "publishedDate": null, "accessedDate": "2026-10-23", "kind": "intergovernmental" }
+  ],
+  "lastReviewed": "2026-10-23"
+}

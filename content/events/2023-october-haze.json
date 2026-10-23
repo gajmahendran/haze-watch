@@ -1,0 +1,114 @@
+{
+  "slug": "2023-october-haze",
+  "title": "2023: early October haze",
+  "yearStart": 2023,
+  "yearEnd": 2023,
+  "datesLabel": "Early October 2023",
+  "dateStart": "2023-10",
+  "dateEnd": "2023-10",
+  "type": "transboundary",
+  "severity": "moderate",
+  "severityBasis": "NEA reported Singapore's 24-hour PSI from the upper Moderate to the lower Unhealthy range (up to 120). Malaysia's DOE reported 13 locations with unhealthy air quality. No source opened describes very unhealthy or hazardous levels.",
+  "status": "partial",
+  "countries": [
+    "ID",
+    "SG",
+    "MY"
+  ],
+  "summary": "In early October 2023, smoke from fires in southern and central Sumatra drifted north and northwest. On 3 October Malaysia's DOE reported unhealthy air quality at 13 locations, citing ASMC counts of 121 hotspots in Sumatra and 122 in Kalimantan. On 7 October Singapore's 24-hour PSI reached the lower Unhealthy range. Conditions improved on 8 October as hotspot counts fell and winds were forecast to shift.",
+  "summarySourceIds": [
+    "s1",
+    "s2",
+    "s3"
+  ],
+  "measurements": [
+    {
+      "country": "SG",
+      "location": "Singapore (upper end of the island-wide range)",
+      "metric": "24-hour PSI",
+      "value": 120,
+      "unit": "index (no unit)",
+      "averagingPeriod": "24-hour",
+      "observedAt": "2023-10-07T17:00+08:00",
+      "sourceIds": [
+        "s2"
+      ],
+      "note": "NEA gave a range of 66–120 across Singapore at 5pm without a regional breakdown."
+    },
+    {
+      "country": "SG",
+      "location": "Singapore (upper end of the island-wide range)",
+      "metric": "1-hour PM2.5",
+      "value": 94,
+      "unit": "µg/m³",
+      "averagingPeriod": "1-hour",
+      "observedAt": "2023-10-07T17:00+08:00",
+      "sourceIds": [
+        "s2"
+      ],
+      "note": "Range 30–94 µg/m³, Bands I–II (Normal to Elevated)."
+    }
+  ],
+  "fireWeatherContext": [
+    {
+      "text": "NEA counted 212 hotspots on 6 October, 188 on 7 October and 68 on 8 October, mostly over southern and central Sumatra, with moderate to dense smoke blown north and northwest by prevailing winds.",
+      "sourceIds": [
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "text": "On 8 October NEA forecast winds mainly from the east, lowering the chance of transboundary haze reaching Singapore, along with showers.",
+      "sourceIds": [
+        "s3"
+      ]
+    }
+  ],
+  "impacts": [],
+  "responses": [
+    {
+      "actor": "National Environment Agency, Singapore",
+      "text": "Advised healthy people to reduce, vulnerable groups to minimise, and people with chronic lung or heart disease to avoid prolonged or strenuous outdoor activity on 7 October.",
+      "sourceIds": [
+        "s2"
+      ]
+    }
+  ],
+  "policy": [],
+  "openQuestions": [
+    "Malaysian API values and locations for October 2023 have not been sourced.",
+    "Any school or public-event measures in Malaysia or Singapore are not documented here.",
+    "The full duration of the episode, including any later recurrence, is not established."
+  ],
+  "imagery": [],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Hazy days are back again",
+      "publisher": "The Star (Malaysia)",
+      "url": "https://thestar.com.my/news/nation/2023/10/03/hazy-days-are-back-again",
+      "publishedDate": "2023-10-03",
+      "accessedDate": "2026-10-23",
+      "kind": "journalism"
+    },
+    {
+      "id": "s2",
+      "title": "Haze Situation Update (7 October 2023)",
+      "publisher": "National Environment Agency, Singapore",
+      "url": "https://www.nea.gov.sg/media/news/advisories/index/haze-situation-update-7-october-2023",
+      "publishedDate": "2023-10-07",
+      "accessedDate": "2026-10-23",
+      "kind": "official"
+    },
+    {
+      "id": "s3",
+      "title": "Haze Situation Update (8 October 2023)",
+      "publisher": "National Environment Agency, Singapore",
+      "url": "https://www.nea.gov.sg/media/news/advisories/index/haze-situation-update-8-october-2023",
+      "publishedDate": "2023-10-08",
+      "accessedDate": "2026-10-23",
+      "kind": "official"
+    }
+  ],
+  "lastReviewed": "2026-10-23"
+}

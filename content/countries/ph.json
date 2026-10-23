@@ -1,0 +1,31 @@
+{
+  "code": "PH",
+  "status": "partial",
+  "agencies": [
+    { "name": "Department of Environment and Natural Resources, Environmental Management Bureau (DENR-EMB)", "role": "Operates PM2.5 monitoring stations in Metro Manila and other regions and issues air quality advisories.", "url": "https://tribune.net.ph/2026/09/14/15-metro-manila-stations-record-good-pm25-aqi-amid-haze", "sourceIds": ["s1"] }
+  ],
+  "nationalIndex": {
+    "name": "Philippine Air Quality Index (PM2.5)",
+    "description": "DENR-EMB reports station readings on a Philippine AQI for PM2.5 with categories that include 'Good' and 'Fair'. The full band table has not been confirmed here.",
+    "sourceIds": ["s1"]
+  },
+  "monitoring": [
+    { "text": "At noon on 14 September 2026, 15 of 16 Metro Manila stations read 'Good' and one read 'Fair'. Outside Metro Manila, 26 stations read 'Good', five 'Fair' and three had no data.", "sourceIds": ["s1"] }
+  ],
+  "seasonalPattern": [
+    { "text": "In September 2026 DENR-EMB said haze over parts of the country was possibly associated with smoke from ongoing fires in Kalimantan carried by winds.", "sourceIds": ["s1"] }
+  ],
+  "healthContext": [
+    { "text": "DENR-EMB advised minimising prolonged outdoor activity in visibly hazy areas and wearing a well-fitting mask, preferably N95 or equivalent, outdoors in noticeably hazy areas.", "sourceIds": ["s1"] }
+  ],
+  "policy": [],
+  "dataAccess": [],
+  "openQuestions": [
+    "The full Philippine AQI band table and averaging period have not been confirmed from DENR-EMB.",
+    "Public data access for DENR-EMB stations has not been checked."
+  ],
+  "sources": [
+    { "id": "s1", "title": "15 Metro Manila stations record good PM2.5 AQI amid haze", "publisher": "Daily Tribune (Philippines)", "url": "https://tribune.net.ph/2026/09/14/15-metro-manila-stations-record-good-pm25-aqi-amid-haze", "publishedDate": "2026-09-14", "accessedDate": "2026-10-23", "kind": "journalism" }
+  ],
+  "lastReviewed": "2026-10-23"
+}

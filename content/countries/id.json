@@ -1,0 +1,43 @@
+{
+  "code": "ID",
+  "status": "partial",
+  "agencies": [
+    { "name": "Ministry of Environment and Forestry (KLHK)", "role": "Issued the regulation that defines Indonesia's air pollution standard index (ISPU) and how it must be published.", "url": "https://peraturan.go.id/files/bn774-2020.pdf", "sourceIds": ["s1"] },
+    { "name": "Ministry of Health", "role": "Records respiratory infections during haze. Al Jazeera reported more than 170,000 recorded in 2026.", "url": "https://www.aljazeera.com/news/2026/10/9/malaysia-shuts-schools-as-haze-from-indonesian-fires-chokes-southeast-asia", "sourceIds": ["s2"] }
+  ],
+  "nationalIndex": {
+    "name": "Indeks Standar Pencemar Udara (ISPU)",
+    "description": "Defined by Minister of Environment and Forestry Regulation P.14/MENLHK/SETJEN/KUM.1/7/2020. Covers PM10, PM2.5, CO, NO2, SO2, O3 and hydrocarbons, with five categories from 'baik' (good) to 'berbahaya' (hazardous). The ISPU is calculated hourly.",
+    "sourceIds": ["s1"]
+  },
+  "monitoring": [
+    { "text": "The 2020 regulation requires PM2.5 information to be published to the public every hour, and other parameters at least twice a day.", "sourceIds": ["s1"] }
+  ],
+  "seasonalPattern": [
+    { "text": "In 2015 the government reported 2.6 million hectares burned between June and October, about a third of it peatland, according to the World Bank.", "sourceIds": ["s3"] },
+    { "text": "A CIFOR satellite assessment estimated 1.64 million hectares burned between January and October 2019, 41 percent of it peatland, as reported by The Jakarta Post.", "sourceIds": ["s4"] }
+  ],
+  "healthContext": [
+    { "text": "The World Bank cites more than 500,000 acute respiratory infection cases and 19 haze-related deaths in 2015.", "sourceIds": ["s3"] }
+  ],
+  "policy": [
+    { "date": "2014", "text": "Indonesia's parliament approved ratification of the ASEAN Agreement on Transboundary Haze Pollution through Law No. 26 of 2014, and the instrument was deposited on 20 January 2015.", "sourceIds": ["s5"] },
+    { "date": "2020-07-13", "text": "Regulation P.14/MENLHK/SETJEN/KUM.1/7/2020 on the ISPU was enacted.", "sourceIds": ["s1"] }
+  ],
+  "dataAccess": [
+    { "name": "ISPU portal (KLHK)", "url": "https://ispu.menlhk.go.id/", "accessMethod": "unknown", "note": "Could not be checked: the site disallows automated access. Whether it offers an API or download is unknown." }
+  ],
+  "openQuestions": [
+    "ISPU category ranges are in an annex of the regulation that could not be read in the copy checked.",
+    "The number and location of ISPU stations, and any public data access route, are not documented here.",
+    "Official 2026 burned-area and hotspot totals have not been sourced from KLHK."
+  ],
+  "sources": [
+    { "id": "s1", "title": "Peraturan Menteri Lingkungan Hidup dan Kehutanan Nomor P.14/MENLHK/SETJEN/KUM.1/7/2020 tentang Indeks Standar Pencemar Udara", "publisher": "Ministry of Environment and Forestry, Republic of Indonesia (via peraturan.go.id)", "url": "https://peraturan.go.id/files/bn774-2020.pdf", "publishedDate": "2020-07-15", "accessedDate": "2026-10-23", "kind": "official" },
+    { "id": "s2", "title": "Malaysia shuts schools as haze from Indonesian fires chokes Southeast Asia", "publisher": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/10/9/malaysia-shuts-schools-as-haze-from-indonesian-fires-chokes-southeast-asia", "publishedDate": "2026-10-09", "accessedDate": "2026-10-23", "kind": "journalism" },
+    { "id": "s3", "title": "The Cost of Fire: An Economic Analysis of Indonesia's 2015 Fire Crisis", "publisher": "World Bank", "url": "https://documents1.worldbank.org/curated/pt/776101467990969768/pdf/103668-BRI-Cost-of-Fires-Knowledge-Note-PUBLIC-ADD-NEW-SERIES-Indonesia-Sustainable-Landscapes-Knowledge-Note.pdf", "publishedDate": "2016-02", "accessedDate": "2026-10-23", "kind": "intergovernmental" },
+    { "id": "s4", "title": "Indonesia's 2019 fire season not doomsday for forests but ecological concerns remain", "publisher": "The Jakarta Post", "url": "https://www.thejakartapost.com/news/2019/12/06/indonesias-2019-fire-season-not-doomsday-for-forests-but-ecological-concerns-remain", "publishedDate": "2019-12-06", "accessedDate": "2026-10-23", "kind": "journalism" },
+    { "id": "s5", "title": "Indonesia Deposits Instrument of Ratification of the ASEAN Agreement on Transboundary Haze Pollution", "publisher": "ASEAN Haze Portal (ASEAN Secretariat)", "url": "https://hazeportal.asean.org/?p=2655", "publishedDate": "2015-01-20", "accessedDate": "2026-10-23", "kind": "intergovernmental" }
+  ],
+  "lastReviewed": "2026-10-23"
+}

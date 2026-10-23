@@ -1,0 +1,61 @@
+{
+  "slug": "1997-el-nino-haze",
+  "title": "1997–1998: the El Niño haze",
+  "yearStart": 1997,
+  "yearEnd": 1998,
+  "datesLabel": "August to October 1997 in Singapore, easing in November",
+  "dateStart": "1997-08",
+  "dateEnd": "1997-11",
+  "type": "transboundary",
+  "severity": "severe",
+  "severityBasis": "The Meteorological Service Singapore titles its account 'Severe Transboundary Smoke Haze in 1997' and says Singapore's air quality reached 'very unhealthy levels', with visibility below 300 m. An EEPSEA and WWF study put the regional cost at about US$4.5 billion as a conservative lower bound.",
+  "status": "verified",
+  "countries": ["ID", "MY", "SG", "BN", "TH"],
+  "summary": "During the 1997–1998 El Niño, drought in Indonesia encouraged widespread, prolonged fires in Sumatra and Kalimantan. Between August and October 1997, southeasterly and southwesterly winds carried the smoke to Brunei, Malaysia, Thailand and Singapore, according to the Meteorological Service Singapore. Conditions improved in November when the Northeast Monsoon set in. An economic study completed in May 1998 estimated that about 5 million hectares burned in Indonesia and that fires and haze affected 70 million people across the region.",
+  "summarySourceIds": ["s1", "s3"],
+  "measurements": [
+    {
+      "country": "SG",
+      "location": "Singapore (national reading)",
+      "metric": "3-hour PSI",
+      "value": 226,
+      "unit": "index (no unit)",
+      "averagingPeriod": "3-hour",
+      "observedAt": "1997-09-18",
+      "sourceIds": ["s1", "s2"],
+      "note": "MSS gives this as the local 3-hour PSI peak on 18 September. The NLB Infopedia lists 226 as the year's highest PSI without naming the averaging period."
+    }
+  ],
+  "fireWeatherContext": [
+    { "text": "MSS links the fires to drought in Indonesia during the record-breaking 1997–1998 El Niño, and notes that rainfall in 1997 was well below average across the region, including Singapore.", "sourceIds": ["s1"] },
+    { "text": "MSS attributes the widespread, prolonged burning of forested land in Sumatra and Kalimantan to traditional land-clearing practices.", "sourceIds": ["s1"] },
+    { "text": "The EEPSEA study estimated that fires burned about 5 million hectares in Indonesia.", "sourceIds": ["s3"] }
+  ],
+  "impacts": [
+    { "kind": "economic", "certainty": "estimated", "text": "EEPSEA and WWF estimated total fire and haze costs of about US$4.47 billion, of which about US$3.8 billion fell on Indonesia. The authors call this a conservative lower bound and exclude long-term health effects and loss of life.", "sourceIds": ["s3"] },
+    { "kind": "economic", "certainty": "estimated", "text": "The same study estimated haze costs of about US$310 million for Malaysia, mainly industrial production and tourism, and about US$74 million for Singapore, mainly tourism.", "sourceIds": ["s3"] },
+    { "kind": "economic", "certainty": "estimated", "text": "The National Library Board reports expert estimates of Singapore's losses between S$97.5 million and S$110.5 million. This differs from the EEPSEA figure; the studies used different methods.", "sourceIds": ["s2"] },
+    { "kind": "health", "certainty": "estimated", "text": "EEPSEA valued short-term health damages at about US$941 million across the region, almost all of it in Indonesia.", "sourceIds": ["s3"] },
+    { "kind": "health", "certainty": "reported", "text": "The National Library Board reports that more Singaporeans suffered respiratory and haze-related illnesses, and that tourism was badly affected.", "sourceIds": ["s2"] },
+    { "kind": "other", "certainty": "reported", "text": "Visibility in Singapore fell below 300 metres, according to MSS.", "sourceIds": ["s1"] }
+  ],
+  "responses": [
+    { "actor": "Government of Singapore", "text": "From 1997 Singapore has provided satellite images and fire hotspot coordinates to Indonesia, according to the National Library Board.", "sourceIds": ["s2"] }
+  ],
+  "policy": [
+    { "date": "2002-06-10", "text": "The ten ASEAN member states signed the ASEAN Agreement on Transboundary Haze Pollution in Kuala Lumpur. It entered into force on 25 November 2003.", "sourceIds": ["s4"] }
+  ],
+  "openQuestions": [
+    "The 1998 phase of the El Niño fire period is not yet documented here from a source we could open.",
+    "AFP reported in 2013 that Malaysia's API reached 860 during the 1997–1998 haze, but gave no station, date or averaging period. An official DOE record is needed before this figure can be listed.",
+    "The two economic estimates for Singapore (EEPSEA and the figures cited by NLB) differ and have not been reconciled."
+  ],
+  "imagery": [],
+  "sources": [
+    { "id": "s1", "title": "Severe Transboundary Smoke Haze in 1997", "publisher": "Meteorological Service Singapore", "url": "https://www.weather.gov.sg/severe-transboundary-smoke-haze-in-1997/", "publishedDate": null, "accessedDate": "2026-10-23", "kind": "official" },
+    { "id": "s2", "title": "Singapore Infopedia article on haze (SIP_2013-08-30_185150), by Jaime Koh and Stephanie Ho", "publisher": "National Library Board, Singapore", "url": "https://eresources.nlb.gov.sg/infopedia/articles/SIP_2013-08-30_185150.html", "publishedDate": null, "accessedDate": "2026-10-23", "kind": "reference" },
+    { "id": "s3", "title": "The Indonesian Fires and Haze of 1997: The Economic Toll", "publisher": "Economy and Environment Program for Southeast Asia (EEPSEA) and WWF Indonesia", "url": "https://cybercemetery.unt.edu/archive/nbii/20120113021140/http://www.eepsea.org/uploads/user-S/10536124150ACF62.pdf", "publishedDate": "1998-05", "accessedDate": "2026-10-23", "kind": "scientific" },
+    { "id": "s4", "title": "Indonesia Deposits Instrument of Ratification of the ASEAN Agreement on Transboundary Haze Pollution", "publisher": "ASEAN Haze Portal (ASEAN Secretariat)", "url": "https://hazeportal.asean.org/?p=2655", "publishedDate": "2015-01-20", "accessedDate": "2026-10-23", "kind": "intergovernmental" }
+  ],
+  "lastReviewed": "2026-10-23"
+}

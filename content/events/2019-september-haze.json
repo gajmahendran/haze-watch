@@ -1,0 +1,193 @@
+{
+  "slug": "2019-september-haze",
+  "title": "2019: Sarawak's worst haze since 1997",
+  "yearStart": 2019,
+  "yearEnd": 2019,
+  "datesLabel": "August to September 2019",
+  "dateStart": "2019-08",
+  "dateEnd": "2019-09",
+  "type": "transboundary",
+  "severity": "severe",
+  "severityBasis": "The Borneo Post describes August and September 2019 as Sarawak's worst regional haze since 1997, with API readings of 442 in Miri and 407 in Sri Aman, both above 300, the top of Malaysia's scale ('hazardous').",
+  "status": "verified",
+  "countries": [
+    "ID",
+    "MY",
+    "SG"
+  ],
+  "summary": "Fires in Kalimantan and Sumatra, together with local peat fires in northern Sarawak, brought heavy haze to Malaysia and Singapore in August and September 2019. Sarawak recorded API readings above 400 and closed more than 1,000 schools on 21 September. In Singapore the 24-hour PSI entered the unhealthy range in all five regions on 15 September, the first time since 2016. A CIFOR satellite assessment reported by The Jakarta Post estimated 1.64 million hectares burned in Indonesia between January and October 2019.",
+  "summarySourceIds": [
+    "s1",
+    "s2",
+    "s3"
+  ],
+  "measurements": [
+    {
+      "country": "SG",
+      "location": "West region, Singapore",
+      "metric": "24-hour PSI",
+      "value": 103,
+      "unit": "index (no unit)",
+      "averagingPeriod": "24-hour",
+      "observedAt": "2019-09-14T16:00+08:00",
+      "sourceIds": [
+        "s2"
+      ],
+      "note": "First unhealthy reading since 2016, as reported."
+    },
+    {
+      "country": "SG",
+      "location": "West region, Singapore",
+      "metric": "24-hour PSI",
+      "value": 124,
+      "unit": "index (no unit)",
+      "averagingPeriod": "24-hour",
+      "observedAt": "2019-09-15T08:00+08:00",
+      "sourceIds": [
+        "s2"
+      ],
+      "note": "Readings ranged from 107 in the east to 124 in the west at 8am."
+    }
+  ],
+  "fireWeatherContext": [
+    {
+      "text": "The Borneo Post reports that fires in Kalimantan were mostly responsible for Sarawak's haze, with 811 hotspots detected on 5 September, while local forest and peat fires burned around Kuala Baram, Senadin and Marudi near Miri.",
+      "sourceIds": [
+        "s1"
+      ]
+    },
+    {
+      "text": "A CIFOR satellite assessment, reported by The Jakarta Post, estimated that 1.64 million hectares burned in seven Indonesian provinces from January to October 2019, about 41 percent of it peatland.",
+      "sourceIds": [
+        "s3"
+      ]
+    },
+    {
+      "text": "NEA attributed Singapore's worsening air quality in mid-September to winds carrying smoke haze from Sumatra.",
+      "sourceIds": [
+        "s2"
+      ]
+    }
+  ],
+  "impacts": [
+    {
+      "kind": "other",
+      "certainty": "reported",
+      "text": "An Education Ministry statement on the evening of 18 September 2019 closed 800 schools in Kedah, Perak, Negeri Sembilan and Sarawak and 1,659 in Selangor, Putrajaya, Kuala Lumpur and Penang, affecting 1,732,842 students, as reported by TheSmartLocal.",
+      "sourceIds": [
+        "s5"
+      ]
+    },
+    {
+      "kind": "other",
+      "certainty": "reported",
+      "text": "On 21 September Sarawak's Education Department ordered 1,037 schools to close, keeping about 325,000 students at home, according to the Borneo Post.",
+      "sourceIds": [
+        "s1"
+      ]
+    },
+    {
+      "kind": "other",
+      "certainty": "reported",
+      "text": "In Sri Aman, water sources dried up during the drought, affecting about 100,000 residents.",
+      "sourceIds": [
+        "s1"
+      ]
+    },
+    {
+      "kind": "environmental",
+      "certainty": "estimated",
+      "text": "The CIFOR assessment classified 76 percent of the burned land as idle land, former forest degraded by repeated burning.",
+      "sourceIds": [
+        "s3"
+      ]
+    }
+  ],
+  "responses": [
+    {
+      "actor": "Ministry of Health Malaysia",
+      "text": "The Director-General of Health advised postponing outdoor gatherings and sports when the API exceeds 100, in line with the National Haze Action Plan 2019.",
+      "sourceIds": [
+        "s4"
+      ]
+    },
+    {
+      "actor": "Sarawak State Disaster Management Committee and federal agencies",
+      "text": "Water bombing by the Malaysian Maritime Enforcement Agency and cloud seeding with a Royal Malaysian Air Force C-130 from 20 September, according to the Borneo Post.",
+      "sourceIds": [
+        "s1"
+      ]
+    },
+    {
+      "actor": "Government of Singapore",
+      "text": "The Minister for the Environment and Water Resources said Singapore had offered firefighting assistance to Indonesia, and the Ministry of Health said N95 mask stocks were sufficient.",
+      "sourceIds": [
+        "s2"
+      ]
+    }
+  ],
+  "policy": [],
+  "openQuestions": [
+    "API readings are quoted from the Borneo Post without station times. Malaysia's API is the highest of six sub-indices: 24 hours for PM2.5 (DOE to Malaysiakini, 2019) and PM10, but 1 or 8 hours for the gases. A press-quoted API cannot be pinned to one averaging period, so it stays in the text.",
+    "The school closure figures come from a press report of an Education Ministry statement; the statement itself has not been opened.",
+    "Indonesia's official burned-area figure for 2019 (from the environment ministry) has not been sourced."
+  ],
+  "imagery": [],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Year in Review: Sarawak hit by choking haze, drought",
+      "publisher": "The Borneo Post",
+      "url": "https://www.theborneopost.com/2019/12/28/sarawak-hit-by-choking-haze-drought/",
+      "publishedDate": "2019-12-28",
+      "accessedDate": "2026-10-23",
+      "kind": "journalism"
+    },
+    {
+      "id": "s2",
+      "title": "Haze in Singapore enters unhealthy range across island",
+      "publisher": "INQUIRER.net",
+      "url": "https://newsinfo.inquirer.net/1164920/haze-in-singapore-enters-unhealthy-range-across-island",
+      "publishedDate": "2019-09-15",
+      "accessedDate": "2026-10-23",
+      "kind": "journalism"
+    },
+    {
+      "id": "s3",
+      "title": "Indonesia's 2019 fire season not doomsday for forests but ecological concerns remain",
+      "publisher": "The Jakarta Post",
+      "url": "https://www.thejakartapost.com/news/2019/12/06/indonesias-2019-fire-season-not-doomsday-for-forests-but-ecological-concerns-remain",
+      "publishedDate": "2019-12-06",
+      "accessedDate": "2026-10-23",
+      "kind": "journalism"
+    },
+    {
+      "id": "s4",
+      "title": "Kenyataan Akhbar KPK 14 Sept 2019: Nasihat berkaitan penganjuran aktiviti fizikal semasa jerebu",
+      "publisher": "Ministry of Health Malaysia",
+      "url": "https://www.moh.gov.my/images/perkhidmatan-utama/info-kesihatan/jerebu/pdf/KENYATAAN_AKHBAR_KPK_14_SEPT_2019_Nasihat_berkaitan_penganjuran_aktiviti_fizikal_semasa_jerebu.pdf",
+      "publishedDate": "2019-09-14",
+      "accessedDate": "2026-10-23",
+      "kind": "official"
+    },
+    {
+      "id": "s5",
+      "title": "Worsening haze causes over 2,000 schools to close",
+      "publisher": "TheSmartLocal Malaysia",
+      "url": "https://thesmartlocal.my/haze-2019/",
+      "publishedDate": "2019-09-18",
+      "accessedDate": "2026-10-23",
+      "kind": "journalism"
+    },
+    {
+      "id": "s6",
+      "title": "DOE: 'Absolutely no deception' in API readings",
+      "publisher": "Malaysiakini",
+      "url": "https://www.malaysiakini.com/news/493169",
+      "publishedDate": "2019-09-24",
+      "accessedDate": "2026-10-23",
+      "kind": "journalism"
+    }
+  ],
+  "lastReviewed": "2026-10-23"
+}

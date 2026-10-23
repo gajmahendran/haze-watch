@@ -1,0 +1,51 @@
+{
+  "code": "SG",
+  "status": "researched",
+  "agencies": [
+    { "name": "National Environment Agency (NEA)", "role": "Computes and publishes the 24-hour PSI and 1-hour PM2.5 for five regions, issues haze situation updates and forecasts.", "url": "https://www.nea.gov.sg/", "sourceIds": ["s1", "s2"] },
+    { "name": "Ministry of Health (MOH)", "role": "Publishes health advisories tied to the 24-hour PSI forecast and the 1-hour PM2.5 bands, including mask guidance.", "url": "https://www.moh.gov.sg/others/haze/", "sourceIds": ["s3"] },
+    { "name": "Meteorological Service Singapore (MSS)", "role": "Publishes weather and haze outlooks and an archive on transboundary smoke haze episodes.", "url": "https://www.weather.gov.sg/", "sourceIds": ["s4"] },
+    { "name": "Haze Task Force", "role": "Inter-agency body formed in 1994 to coordinate government action on haze.", "url": "https://eresources.nlb.gov.sg/infopedia/articles/SIP_2013-08-30_185150.html", "sourceIds": ["s5", "s6"] }
+  ],
+  "nationalIndex": {
+    "name": "Pollutant Standards Index (24-hour PSI)",
+    "description": "Computed from 24-hour averages of six pollutants (PM10, PM2.5, SO2, NO2, O3 and CO). Each pollutant gets a sub-index and the highest becomes the PSI. Bands: 0–50 Good, 51–100 Moderate, 101–200 Unhealthy, 201–300 Very Unhealthy, above 300 Hazardous.",
+    "sourceIds": ["s1", "s3"]
+  },
+  "monitoring": [
+    { "text": "NEA publishes the 24-hour PSI on a rolling basis and 1-hour PM2.5 readings every hour for the North, South, East, West and Central regions.", "sourceIds": ["s1"] },
+    { "text": "PM2.5 became the sixth pollutant in the 24-hour PSI in April 2014, and NEA began publishing hourly PM2.5 readings that year. Bands for the 1-hour PM2.5 were introduced in 2016.", "sourceIds": ["s1"] },
+    { "text": "NEA says other sites such as aqicn.org use different computation methods, so their readings are not comparable with the 24-hour PSI.", "sourceIds": ["s1"] }
+  ],
+  "seasonalPattern": [
+    { "text": "MSS describes the major 1997 haze as occurring during the Southwest Monsoon, August to October, easing with the Northeast Monsoon in November.", "sourceIds": ["s4"] },
+    { "text": "In recent episodes NEA has linked haze arrivals to southeasterly winds carrying smoke from Kalimantan and southwesterly winds from Sumatra.", "sourceIds": ["s2"] },
+    { "text": "During the Northeast Monsoon, winds from the north-west and north-east can carry smoke from mainland Southeast Asia, as in March 2025.", "sourceIds": ["s7"] }
+  ],
+  "healthContext": [
+    { "text": "MOH advice differs for healthy people, for the elderly, pregnant women and children, and for people with chronic lung or heart disease. At 24-hour PSI 101–200, healthy people should reduce prolonged or strenuous outdoor exertion.", "sourceIds": ["s3"] },
+    { "text": "MOH says N95 masks are not needed for commuting or indoors, and recommends one for the general public when PM2.5 is above 250 µg/m³ and they must be outdoors for several hours.", "sourceIds": ["s3"] }
+  ],
+  "policy": [
+    { "date": "2014-09-25", "text": "The Transboundary Haze Pollution Act 2014 applies to conduct outside Singapore that causes or contributes to haze pollution in Singapore, defined by a poor air quality episode lasting at least 24 hours.", "sourceIds": ["s8"] },
+    { "date": "1994", "text": "The Haze Task Force was formed to coordinate government action.", "sourceIds": ["s5"] }
+  ],
+  "dataAccess": [
+    { "name": "data.gov.sg real-time API (PSI, PM2.5, weather)", "url": "https://data.gov.sg/datasets/d_e1058d6974c877257e32048ab128ad83/view", "accessMethod": "documented_api", "note": "Public, no key required (optional key raises the rate limit), Singapore Open Data Licence v1.0. Connected on this platform." },
+    { "name": "haze.gov.sg historical readings", "url": "https://www.haze.gov.sg/resources/historical-readings", "accessMethod": "web_only", "note": "Web table for the past year behind a captcha. NEA points to data.gov.sg for older data." }
+  ],
+  "openQuestions": [
+    "Older historical PSI datasets on data.gov.sg are offered as dataset downloads. They are not yet loaded into this platform's database."
+  ],
+  "sources": [
+    { "id": "s1", "title": "Air pollution FAQs", "publisher": "National Environment Agency, Singapore", "url": "https://www.nea.gov.sg/our-services/pollution-control/air-pollution/faqs", "publishedDate": null, "accessedDate": "2026-10-23", "kind": "official" },
+    { "id": "s2", "title": "Haze Situation Update (15 October 2026)", "publisher": "National Environment Agency, Singapore", "url": "https://www.nea.gov.sg/media/news/advisories/index/haze-situation-update-15-october-2026", "publishedDate": "2026-10-15", "accessedDate": "2026-10-23", "kind": "official" },
+    { "id": "s3", "title": "Haze", "publisher": "Ministry of Health, Singapore", "url": "https://www.moh.gov.sg/others/haze/", "publishedDate": null, "accessedDate": "2026-10-23", "kind": "official" },
+    { "id": "s4", "title": "Severe Transboundary Smoke Haze in 1997", "publisher": "Meteorological Service Singapore", "url": "https://www.weather.gov.sg/severe-transboundary-smoke-haze-in-1997/", "publishedDate": null, "accessedDate": "2026-10-23", "kind": "official" },
+    { "id": "s5", "title": "Singapore Infopedia article on haze (SIP_2013-08-30_185150), by Jaime Koh and Stephanie Ho", "publisher": "National Library Board, Singapore", "url": "https://eresources.nlb.gov.sg/infopedia/articles/SIP_2013-08-30_185150.html", "publishedDate": null, "accessedDate": "2026-10-23", "kind": "reference" },
+    { "id": "s6", "title": "Singapore haze tips air quality into unhealthy range for first time since 2023", "publisher": "Malay Mail", "url": "https://www.malaymail.com/amp/news/singapore/2026/09/04/singapore-haze-tips-air-quality-into-unhealthy-range-for-first-time-since-2023/233833", "publishedDate": "2026-09-04", "accessedDate": "2026-10-23", "kind": "journalism" },
+    { "id": "s7", "title": "Haze returns to Singapore as regional hot spot activity intensifies", "publisher": "Malay Mail", "url": "https://www.malaymail.com/news/singapore/2025/03/26/haze-returns-to-singapore-as-regional-hot-spot-activity-intensifies/170917", "publishedDate": "2025-03-26", "accessedDate": "2026-10-23", "kind": "journalism" },
+    { "id": "s8", "title": "Transboundary Haze Pollution Act 2014", "publisher": "Singapore Statutes Online, Attorney-General's Chambers", "url": "https://sso.agc.gov.sg/Act/THPA2014", "publishedDate": null, "accessedDate": "2026-10-23", "kind": "official" }
+  ],
+  "lastReviewed": "2026-10-23"
+}

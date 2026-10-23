@@ -1,0 +1,214 @@
+{
+  "slug": "2013-june-haze",
+  "title": "2013: June record in Singapore and an emergency in Johor",
+  "yearStart": 2013,
+  "yearEnd": 2013,
+  "datesLabel": "Mid to late June 2013",
+  "dateStart": "2013-06",
+  "dateEnd": "2013-06",
+  "type": "transboundary",
+  "severity": "severe",
+  "severityBasis": "The National Library Board records that Singapore's PSI reached the 'hazardous' range for the first time. Malaysia declared an emergency in Muar and Ledang, Johor, on 23 June 2013 after an API reading of about 750, which AFP described as the highest in Malaysia for 16 years.",
+  "status": "verified",
+  "countries": [
+    "ID",
+    "SG",
+    "MY"
+  ],
+  "summary": "In June 2013 smoke from fires in Sumatra brought Singapore its highest PSI on record and led Malaysia to declare an emergency in two districts of Johor. Singapore's 3-hour PSI reached 371 at 1pm on 20 June, when the 24-hour PSI stood at 232 to 291, and the National Library Board records 401 on 21 June. AFP reported an API of 750 in Muar on the morning of 23 June, and Malaysia's Prime Minister signed an emergency declaration for Muar and Ledang that day. ASEAN ministers met in Kuala Lumpur in July and noted Indonesia's suppression and enforcement effort.",
+  "summarySourceIds": [
+    "s1",
+    "s2",
+    "s4",
+    "s6"
+  ],
+  "measurements": [
+    {
+      "country": "SG",
+      "location": "Singapore (national reading)",
+      "metric": "3-hour PSI",
+      "value": 371,
+      "unit": "index (no unit)",
+      "averagingPeriod": "3-hour",
+      "observedAt": "2013-06-20T13:00+08:00",
+      "sourceIds": [
+        "s6",
+        "s1"
+      ],
+      "note": "Confirmed as the 3-hour PSI at 1pm by NEA's chief executive on 20 June 2013. Singapore phased out the 3-hour PSI in 2016, so this is not comparable with today's 24-hour PSI."
+    },
+    {
+      "country": "SG",
+      "location": "Singapore (range across stations)",
+      "metric": "24-hour PSI",
+      "value": 291,
+      "unit": "index (no unit)",
+      "averagingPeriod": "24-hour",
+      "observedAt": "2013-06-20T12:00+08:00",
+      "sourceIds": [
+        "s6"
+      ],
+      "note": "Upper end of the range of 232 to 291 given by NEA's chief executive."
+    },
+    {
+      "country": "SG",
+      "location": "Singapore (national reading)",
+      "metric": "3-hour PSI",
+      "value": 401,
+      "unit": "index (no unit)",
+      "averagingPeriod": "3-hour",
+      "observedAt": "2013-06-21T12:00+08:00",
+      "sourceIds": [
+        "s7",
+        "s1"
+      ],
+      "note": "Highest PSI on record in Singapore according to NLB. MS News gives it as the 3-hour PSI at about noon; an NEA release for this reading has not been opened. Not comparable with today's 24-hour PSI."
+    }
+  ],
+  "fireWeatherContext": [
+    {
+      "text": "The ASEAN Specialised Meteorological Centre forecast occasional dry weather until the end of the Southwest Monsoon in early October 2013, with neutral El Niño conditions, according to the ASEAN ministerial media release.",
+      "sourceIds": [
+        "s4"
+      ]
+    }
+  ],
+  "impacts": [
+    {
+      "kind": "other",
+      "certainty": "reported",
+      "text": "AFP reported that Malaysian authorities closed all schools in the capital and at least four states, and that hundreds of schools in Johor had been closed since the previous Thursday.",
+      "sourceIds": [
+        "s2"
+      ]
+    },
+    {
+      "kind": "health",
+      "certainty": "reported",
+      "text": "Residents of Muar and Tangkak later described watery eyes, sore throats and difficulty sleeping, and visibility of a few metres, in interviews with The Star.",
+      "sourceIds": [
+        "s3"
+      ]
+    },
+    {
+      "kind": "other",
+      "certainty": "reported",
+      "text": "Under the emergency in Muar and Ledang, all non-essential workplaces in the private and public sectors were advised to close, AFP reported.",
+      "sourceIds": [
+        "s2"
+      ]
+    }
+  ],
+  "responses": [
+    {
+      "actor": "Government of Malaysia",
+      "text": "The Prime Minister signed a declaration of emergency for Muar and Ledang districts on 23 June 2013.",
+      "sourceIds": [
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "actor": "Government of Singapore",
+      "text": "An Inter-Ministerial Committee was set up. Ministries issued health advisories, the N95 mask stockpile was released to retailers and given free to low-income families, and medical subsidies were granted to the elderly and young children.",
+      "sourceIds": [
+        "s1"
+      ]
+    },
+    {
+      "actor": "Government of Indonesia",
+      "text": "ASEAN ministers recorded that Indonesia set up command posts, mobilised the military, police and fire brigades, carried out water bombing and artificial rain, and that a task force conducted law enforcement.",
+      "sourceIds": [
+        "s4"
+      ]
+    },
+    {
+      "actor": "ASEAN Sub-Regional Ministerial Steering Committee",
+      "text": "At its 15th meeting on 17 July 2013, ministers recommended adopting Singapore's Haze Monitoring System as a joint system, with land-use and concession maps shared between governments, subject to ASEAN leaders' approval.",
+      "sourceIds": [
+        "s4"
+      ]
+    }
+  ],
+  "policy": [
+    {
+      "date": "2014-09-25",
+      "text": "Singapore passed the Transboundary Haze Pollution Act 2014, which applies to conduct outside Singapore that causes or contributes to haze pollution in Singapore.",
+      "sourceIds": [
+        "s5"
+      ]
+    }
+  ],
+  "openQuestions": [
+    "The 401 reading is given as a 3-hour PSI by secondary sources; NEA's own release for 21 June 2013 has not been opened. A 2013 Annals of the Academy of Medicine editorial gives 246 on 22 June as the highest 24-hour PSI, which conflicts with NEA's 232 to 291 on 20 June and is not used.",
+    "The Muar reading is reported as 750 by AFP and as 'above 750 at 7am' by The Star. The station, exact time and averaging period are not confirmed from DOE.",
+    "Hotspot counts and the area burned in Riau during June 2013 have not yet been sourced."
+  ],
+  "imagery": [],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Singapore Infopedia article on haze (SIP_2013-08-30_185150), by Jaime Koh and Stephanie Ho",
+      "publisher": "National Library Board, Singapore",
+      "url": "https://eresources.nlb.gov.sg/infopedia/articles/SIP_2013-08-30_185150.html",
+      "publishedDate": null,
+      "accessedDate": "2026-10-23",
+      "kind": "reference"
+    },
+    {
+      "id": "s2",
+      "title": "Malaysia smog worst in 16 years due to Indonesia fires",
+      "publisher": "Agence France-Presse, via INQUIRER.net",
+      "url": "https://newsinfo.inquirer.net/431485/malaysia-smog-worst-in-16-years-due-to-indonesia-fires",
+      "publishedDate": "2013-06-23",
+      "accessedDate": "2026-10-23",
+      "kind": "journalism"
+    },
+    {
+      "id": "s3",
+      "title": "Crystal clear memories of 2013 haze",
+      "publisher": "The Star (Malaysia)",
+      "url": "https://www.thestar.com.my/news/nation/2026/09/05/crystal-clear-memories-of-2013-haze",
+      "publishedDate": "2026-09-05",
+      "accessedDate": "2026-10-23",
+      "kind": "journalism"
+    },
+    {
+      "id": "s4",
+      "title": "Media Release of the 15th Meeting of the Sub-Regional Ministerial Steering Committee (MSC) on Transboundary Haze Pollution",
+      "publisher": "ASEAN Haze Portal (ASEAN Secretariat)",
+      "url": "https://hazeportal.asean.org/?p=4278",
+      "publishedDate": "2013-07-18",
+      "accessedDate": "2026-10-23",
+      "kind": "intergovernmental"
+    },
+    {
+      "id": "s5",
+      "title": "Transboundary Haze Pollution Act 2014",
+      "publisher": "Singapore Statutes Online, Attorney-General's Chambers",
+      "url": "https://sso.agc.gov.sg/Act/THPA2014",
+      "publishedDate": null,
+      "accessedDate": "2026-10-23",
+      "kind": "official"
+    },
+    {
+      "id": "s6",
+      "title": "Singapore attends emergency haze meeting convened by Indonesia (Annex A: remarks by NEA CEO Andrew Tan, 20 June 2013)",
+      "publisher": "Government of Singapore, via National Archives of Singapore",
+      "url": "https://www.nas.gov.sg/archivesonline/data/pdfdoc/20130627003.htm",
+      "publishedDate": "2013-06-20",
+      "accessedDate": "2026-10-23",
+      "kind": "official"
+    },
+    {
+      "id": "s7",
+      "title": "4 highest haze readings ever recorded in S'pore",
+      "publisher": "MS News",
+      "url": "https://mustsharenews.com/four-highest-psi-ever-spore/amp/",
+      "publishedDate": "2026-10-08",
+      "accessedDate": "2026-10-23",
+      "kind": "journalism"
+    }
+  ],
+  "lastReviewed": "2026-10-23"
+}

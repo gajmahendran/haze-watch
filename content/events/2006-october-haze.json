@@ -1,0 +1,54 @@
+{
+  "slug": "2006-october-haze",
+  "title": "2006: October haze over Singapore and Malaysia",
+  "yearStart": 2006,
+  "yearEnd": 2006,
+  "datesLabel": "Early October 2006",
+  "dateStart": "2006-10",
+  "dateEnd": "2006-10",
+  "type": "transboundary",
+  "severity": "moderate",
+  "severityBasis": "Sources opened describe Singapore's PSI in the 'unhealthy' band (101–200) and Malaysia recording unhealthy pollution levels. None describes very unhealthy or hazardous readings.",
+  "status": "partial",
+  "countries": ["ID", "SG", "MY"],
+  "summary": "In early October 2006, smoke from fires in Indonesian Borneo and Sumatra affected Singapore and Malaysia. Arab News reported that satellite images showed more than 500 fires, with Central Kalimantan the worst affected, and that visibility in parts of Indonesian Borneo fell to 50 metres. Singapore's National Environment Agency issued a public health warning advising people with heart or respiratory conditions to reduce exertion outdoors.",
+  "summarySourceIds": ["s1", "s2"],
+  "measurements": [
+    {
+      "country": "SG",
+      "location": "Singapore (national reading)",
+      "metric": "PSI",
+      "value": 128,
+      "unit": "index (no unit)",
+      "averagingPeriod": "24-hour, as described by the NLB",
+      "observedAt": "2006-10-07",
+      "sourceIds": ["s1"],
+      "note": "The National Library Board gives 128 as the 2006 peak. Arab News (8 October) reported a record of 145 without stating the averaging period; the difference is unresolved."
+    }
+  ],
+  "fireWeatherContext": [
+    { "text": "An Indonesian Environment Ministry fire control official told Arab News that most areas of Central Kalimantan contain peat, which can burn for years.", "sourceIds": ["s2"] },
+    { "text": "Arab News reported that satellite images showed more than 500 fires.", "sourceIds": ["s2"] }
+  ],
+  "impacts": [
+    { "kind": "health", "certainty": "reported", "text": "Sarawak's Deputy Chief Minister said hospitals were treating about 200 respiratory cases a day, against a usual 40 to 50, according to Arab News.", "sourceIds": ["s2"] },
+    { "kind": "health", "certainty": "reported", "text": "Arab News reported that hundreds of people in Central Kalimantan sought treatment for respiratory illnesses.", "sourceIds": ["s2"] }
+  ],
+  "responses": [
+    { "actor": "National Environment Agency, Singapore", "text": "Issued a public health warning advising people with existing heart or respiratory ailments to reduce physical exertion and outdoor activity.", "sourceIds": ["s2"] },
+    { "actor": "Government of Singapore", "text": "Offered Indonesia an assistance package including aircraft for cloud seeding, fire-location images and firefighters. The National Library Board records that Indonesia did not accept it.", "sourceIds": ["s1"] },
+    { "actor": "Government of Malaysia", "text": "Authorities began distributing face masks, and the Deputy Prime Minister called for regional action and a fund to tackle the annual fires, according to Arab News.", "sourceIds": ["s2"] }
+  ],
+  "policy": [],
+  "openQuestions": [
+    "The PSI averaging period in 2006 reporting is not confirmed against an NEA record. NLB and Arab News give different peak values (128 and 145).",
+    "No Malaysian API values from an official or contemporaneous source have been checked yet.",
+    "The start and end dates of the episode are not established from the sources opened."
+  ],
+  "imagery": [],
+  "sources": [
+    { "id": "s1", "title": "Singapore Infopedia article on haze (SIP_2013-08-30_185150), by Jaime Koh and Stephanie Ho", "publisher": "National Library Board, Singapore", "url": "https://eresources.nlb.gov.sg/infopedia/articles/SIP_2013-08-30_185150.html", "publishedDate": null, "accessedDate": "2026-10-23", "kind": "reference" },
+    { "id": "s2", "title": "Haze Thickens in Southeast Asia", "publisher": "Arab News", "url": "https://www.arabnews.com/node/290189", "publishedDate": "2006-10-08", "accessedDate": "2026-10-23", "kind": "journalism" }
+  ],
+  "lastReviewed": "2026-10-23"
+}

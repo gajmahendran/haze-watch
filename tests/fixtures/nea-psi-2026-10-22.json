@@ -1,0 +1,35 @@
+{
+  "_note": "Recorded response from https://api-open.data.gov.sg/v2/real-time/api/psi on 2026-10-22 (NEA via data.gov.sg, Singapore Open Data Licence v1.0). Used as a parser fixture only.",
+  "code": 0,
+  "data": {
+    "regionMetadata": [
+      { "name": "north", "labelLocation": { "latitude": 1.41803, "longitude": 103.82 } },
+      { "name": "south", "labelLocation": { "latitude": 1.29587, "longitude": 103.82 } },
+      { "name": "east", "labelLocation": { "latitude": 1.35735, "longitude": 103.94 } },
+      { "name": "west", "labelLocation": { "latitude": 1.35735, "longitude": 103.7 } },
+      { "name": "central", "labelLocation": { "latitude": 1.35735, "longitude": 103.82 } }
+    ],
+    "items": [
+      {
+        "date": "2026-10-22",
+        "updatedTimestamp": "2026-10-22T20:00:38+08:00",
+        "timestamp": "2026-10-22T20:00:00+08:00",
+        "readings": {
+          "psi_twenty_four_hourly": { "north": 71, "south": 72, "west": 89, "east": 74, "central": 82 },
+          "no2_one_hour_max": { "north": 12, "south": 51, "west": 36, "east": 55, "central": 45 },
+          "pm10_twenty_four_hourly": { "north": 51, "south": 43, "west": 72, "east": 55, "central": 60 },
+          "pm25_twenty_four_hourly": { "north": 29, "south": 31, "west": 46, "east": 32, "central": 39 },
+          "so2_twenty_four_hourly": { "north": 8, "south": 4, "west": 5, "east": 3, "central": 6 },
+          "co_eight_hour_max": { "north": 1, "south": 1, "west": 1, "east": 1, "central": 1 },
+          "o3_eight_hour_max": { "north": 60, "south": 33, "west": 61, "east": 40, "central": 53 },
+          "co_sub_index": { "north": 10, "south": 11, "west": 14, "east": 9, "central": 8 },
+          "o3_sub_index": { "north": 25, "south": 14, "west": 26, "east": 17, "central": 22 },
+          "pm10_sub_index": { "north": 51, "south": 43, "west": 61, "east": 53, "central": 56 },
+          "pm25_sub_index": { "north": 71, "south": 72, "west": 89, "east": 74, "central": 82 },
+          "so2_sub_index": { "north": 5, "south": 2, "west": 3, "east": 2, "central": 4 }
+        }
+      }
+    ]
+  },
+  "errorMsg": ""
+}

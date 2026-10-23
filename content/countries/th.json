@@ -1,0 +1,39 @@
+{
+  "code": "TH",
+  "status": "partial",
+  "agencies": [
+    { "name": "Pollution Control Department (PCD), Ministry of Natural Resources and Environment", "role": "Sets Thailand's air quality index criteria and runs national monitoring. Leads cooperation with neighbours on transboundary haze data.", "url": "https://www.thailand.go.th/event-detail/001_04_073", "sourceIds": ["s1", "s2"] }
+  ],
+  "nationalIndex": {
+    "name": "Air Quality Index (Thailand)",
+    "description": "PCD's index uses five colour levels (blue, green, yellow, orange, red). From 1 June 2023 the PM2.5 threshold was lowered from 50 to 37.5 µg/m³ and the red level from 91 to 75.1 µg/m³, which the government says follows WHO guidelines and interim targets.",
+    "sourceIds": ["s1"]
+  },
+  "monitoring": [
+    { "text": "In May 2026 PCD agreed with Myanmar's Environmental Conservation Department to integrate monitoring platforms and share air pollution data, and to help Myanmar build online haze reporting.", "sourceIds": ["s2"] }
+  ],
+  "seasonalPattern": [
+    { "text": "ASMC's alerts for the northern ASEAN and Mekong region typically run from about December to May.", "sourceIds": ["s3"] },
+    { "text": "From late March 2024 Chiang Mai's air quality was among the world's worst, with officials counting about 500 hotspots in Chiang Mai in April, Global Voices reported.", "sourceIds": ["s4"] }
+  ],
+  "healthContext": [
+    { "text": "Global Voices reported that over 30,000 people in Chiang Mai were treated for PM2.5-related illness in the first quarter of 2024.", "sourceIds": ["s4"] }
+  ],
+  "policy": [
+    { "date": "2023-06-01", "text": "Tighter PM2.5 thresholds for the national AQI took effect.", "sourceIds": ["s1"] }
+  ],
+  "dataAccess": [
+    { "name": "Air4Thai (PCD)", "url": "http://air4thai.pcd.go.th/webV3/", "accessMethod": "unknown", "note": "Could not be checked: the site disallows automated access. Whether it offers a documented API or reuse licence is unknown." }
+  ],
+  "openQuestions": [
+    "The full AQI band table and averaging periods have not been confirmed from a PCD document.",
+    "Station counts and data licensing for Air4Thai are not documented here."
+  ],
+  "sources": [
+    { "id": "s1", "title": "Thailand adjusts Air Quality Index (AQI) criteria to enhance public awareness and health protection against PM2.5", "publisher": "Government of Thailand (thailand.go.th)", "url": "https://www.thailand.go.th/event-detail/001_04_073", "publishedDate": "2023-08-09", "accessedDate": "2026-10-23", "kind": "official" },
+    { "id": "s2", "title": "Thai-Myanmar plan to link platforms and share haze data", "publisher": "Khaosod English", "url": "https://www.khaosodenglish.com/news/international/2026/05/19/thai-myanmar-plan-to-link-platforms-and-share-haze-data/", "publishedDate": "2026-05-19", "accessedDate": "2026-10-23", "kind": "journalism" },
+    { "id": "s3", "title": "ASMC Alerts", "publisher": "ASEAN Specialised Meteorological Centre", "url": "https://asmc.asean.org/asmc-alerts/", "publishedDate": null, "accessedDate": "2026-10-23", "kind": "intergovernmental" },
+    { "id": "s4", "title": "Rising public frustration in Thailand over Chiang Mai's air pollution crisis", "publisher": "Global Voices", "url": "https://globalvoices.org/2024/04/12/rising-public-frustration-in-thailand-over-chiang-mais-air-pollution-crisis/", "publishedDate": "2024-04-12", "accessedDate": "2026-10-23", "kind": "journalism" }
+  ],
+  "lastReviewed": "2026-10-23"
+}

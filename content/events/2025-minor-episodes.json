@@ -1,0 +1,104 @@
+{
+  "slug": "2025-minor-episodes",
+  "title": "2025: mainland smoke in March, Sumatran haze in July",
+  "yearStart": 2025,
+  "yearEnd": 2025,
+  "datesLabel": "March 2025 and July 2025",
+  "dateStart": "2025-03",
+  "dateEnd": "2025-07",
+  "type": "transboundary",
+  "severity": "minor",
+  "severityBasis": "The highest readings found are in the 'unhealthy' band of Malaysia's API (up to 159 on 20 July 2025) and the 'moderate' band of Singapore's PSI (up to 75 in March 2025). No source opened reports very unhealthy or hazardous levels.",
+  "status": "partial",
+  "countries": [
+    "MY",
+    "SG",
+    "ID",
+    "MM",
+    "TH",
+    "LA",
+    "KH",
+    "VN"
+  ],
+  "summary": "Two smaller episodes are documented. In March 2025, during the Northeast Monsoon, Singapore's 24-hour PSI rose into the moderate range as satellite data showed extensive fire activity in Myanmar, Thailand, Laos, Cambodia and Vietnam, and ASMC warned of a heightened risk of severe transboundary haze. In July 2025 transboundary haze affected west coast states of Peninsular Malaysia, where DOE's APIMS showed unhealthy readings at nine locations on 21 July while ASMC identified 79 hotspots in Sumatra.",
+  "summarySourceIds": [
+    "s1",
+    "s2"
+  ],
+  "measurements": [
+    {
+      "country": "SG",
+      "location": "Central region, Singapore",
+      "metric": "24-hour PSI",
+      "value": 75,
+      "unit": "index (no unit)",
+      "averagingPeriod": "24-hour",
+      "observedAt": "2025-03-26T09:00+08:00",
+      "sourceIds": [
+        "s1"
+      ],
+      "note": "Readings ranged 61–75 at 9am, highest in the central region. One-hour PM2.5 stayed in the normal range."
+    }
+  ],
+  "fireWeatherContext": [
+    {
+      "text": "Malay Mail reported 2,177 hotspots on 15 March and 1,941 on 16 March 2025 across mainland Southeast Asia, and noted that Northeast Monsoon winds from the north-west and north-east can carry that smoke towards Singapore.",
+      "sourceIds": [
+        "s1"
+      ]
+    },
+    {
+      "text": "In July 2025 ASMC identified 79 hotspots in Sumatra. Malaysia's Meteorological Department director-general said this may be the cause of the haze, carried by south-westerly winds.",
+      "sourceIds": [
+        "s2"
+      ]
+    }
+  ],
+  "impacts": [],
+  "responses": [
+    {
+      "actor": "ASEAN Specialised Meteorological Centre",
+      "text": "Issued a warning on 17 March 2025 of a heightened risk of severe transboundary haze in the north of the region because of prolonged dry weather and hotspot activity.",
+      "sourceIds": [
+        "s1"
+      ]
+    }
+  ],
+  "policy": [],
+  "openQuestions": [
+    "The Malaysian API values for July 2025 come from press reports of APIMS. Malaysia's API is the highest of six sub-indices: 24 hours for PM2.5 (DOE to Malaysiakini, 2019) and PM10, but 1 or 8 hours for the gases. A press-quoted API cannot be pinned to one averaging period, so it stays in the text.",
+    "Whether a larger episode occurred later in the 2025 southern dry season (which ASMC closed on 22 October 2025) has not been checked.",
+    "Official readings from Thailand, Laos, Cambodia, Myanmar and Vietnam for March 2025 have not been sourced."
+  ],
+  "imagery": [],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Haze returns to Singapore as regional hot spot activity intensifies",
+      "publisher": "Malay Mail",
+      "url": "https://www.malaymail.com/news/singapore/2025/03/26/haze-returns-to-singapore-as-regional-hot-spot-activity-intensifies/170917",
+      "publishedDate": "2025-03-26",
+      "accessedDate": "2026-10-23",
+      "kind": "journalism"
+    },
+    {
+      "id": "s2",
+      "title": "Unhealthy air quality recorded in four new locations amid worsening haze",
+      "publisher": "The Vibes",
+      "url": "https://www.thevibes.com/articles/news/110740/unhealthy-air-quality-recorded-in-four-new-locations-amid-worsening-haze",
+      "publishedDate": "2025-07-21",
+      "accessedDate": "2026-10-23",
+      "kind": "journalism"
+    },
+    {
+      "id": "s3",
+      "title": "DOE: 'Absolutely no deception' in API readings",
+      "publisher": "Malaysiakini",
+      "url": "https://www.malaysiakini.com/news/493169",
+      "publishedDate": "2019-09-24",
+      "accessedDate": "2026-10-23",
+      "kind": "journalism"
+    }
+  ],
+  "lastReviewed": "2026-10-23"
+}

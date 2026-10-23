@@ -1,0 +1,351 @@
+{
+  "slug": "2026-haze-season",
+  "title": "2026: the El Niño haze season (ongoing)",
+  "yearStart": 2026,
+  "yearEnd": 2026,
+  "datesLabel": "Late August 2026 to present (last reviewed 23 October 2026)",
+  "dateStart": "2026-08",
+  "dateEnd": null,
+  "type": "transboundary",
+  "severity": "severe",
+  "severityBasis": "ASMC activated Alert Level 3, 'High risk of severe transboundary haze', for the southern ASEAN region on 26 August 2026. Malaysia declared an emergency in Serian, Sarawak after an API of 521, which SAYS reported as within the hazardous range. NEA forecast Singapore's 24-hour PSI up to 'Low Very Unhealthy' in October.",
+  "status": "partial",
+  "countries": [
+    "ID",
+    "MY",
+    "SG",
+    "BN",
+    "PH",
+    "VN",
+    "KH"
+  ],
+  "summary": "Fires in Kalimantan and Sumatra during an El Niño year have produced the region's most serious haze since 2019. ASMC raised the southern region to Alert Level 3 on 26 August. Malaysia declared an emergency in Serian on 4 September, Brunei's PSI exceeded 100 in all districts on 5 September, and Singapore's 24-hour PSI was unhealthy island-wide on 15 September for the first time since 2019. Haze returned in October: Malaysia closed schools in Kuala Lumpur, Putrajaya and five states on 9 October, and Singapore's 24-hour PSI reached 186 on 15 October. This record is being updated as the season continues.",
+  "summarySourceIds": [
+    "s1",
+    "s2",
+    "s3",
+    "s4",
+    "s5",
+    "s6",
+    "s8"
+  ],
+  "measurements": [
+    {
+      "country": "SG",
+      "location": "Central region, Singapore",
+      "metric": "24-hour PSI",
+      "value": 101,
+      "unit": "index (no unit)",
+      "averagingPeriod": "24-hour",
+      "observedAt": "2026-09-04T07:00+08:00",
+      "sourceIds": [
+        "s7"
+      ],
+      "note": "First haze-related unhealthy reading since October 2023, as reported from NEA data."
+    },
+    {
+      "country": "SG",
+      "location": "Central region, Singapore",
+      "metric": "24-hour PSI",
+      "value": 154,
+      "unit": "index (no unit)",
+      "averagingPeriod": "24-hour",
+      "observedAt": "2026-09-15T06:00+08:00",
+      "sourceIds": [
+        "s3"
+      ],
+      "note": "All five regions were above 100 at this hour, as reported by The Straits Times via The Star."
+    },
+    {
+      "country": "SG",
+      "location": "Singapore (upper end of the island-wide range)",
+      "metric": "24-hour PSI",
+      "value": 192,
+      "unit": "index (no unit)",
+      "averagingPeriod": "24-hour",
+      "observedAt": "2026-10-09T18:00+08:00",
+      "sourceIds": [
+        "s8"
+      ],
+      "note": "NEA range 135–192 at 6pm, Unhealthy."
+    },
+    {
+      "country": "SG",
+      "location": "Singapore (upper end of the island-wide range)",
+      "metric": "24-hour PSI",
+      "value": 186,
+      "unit": "index (no unit)",
+      "averagingPeriod": "24-hour",
+      "observedAt": "2026-10-15T18:00+08:00",
+      "sourceIds": [
+        "s9"
+      ],
+      "note": "NEA range 121–186 at 6pm, Unhealthy; forecast Unhealthy to Low Very Unhealthy."
+    },
+    {
+      "country": "SG",
+      "location": "Singapore (upper end of the island-wide range)",
+      "metric": "1-hour PM2.5",
+      "value": 208,
+      "unit": "µg/m³",
+      "averagingPeriod": "1-hour",
+      "observedAt": "2026-10-15T18:00+08:00",
+      "sourceIds": [
+        "s9"
+      ],
+      "note": "NEA range 95–208 µg/m³, Band 2 (Elevated) to Band 3 (High)."
+    },
+    {
+      "country": "SG",
+      "location": "West region, Singapore",
+      "metric": "24-hour PSI",
+      "value": 142,
+      "unit": "index (no unit)",
+      "averagingPeriod": "24-hour",
+      "observedAt": "2026-10-20T21:00+08:00",
+      "sourceIds": [
+        "s10"
+      ],
+      "note": "Read directly from NEA's data.gov.sg API for 20 October 2026."
+    }
+  ],
+  "fireWeatherContext": [
+    {
+      "text": "Singapore authorities had warned of haze risk between June and October because of warmer, drier conditions linked to El Niño and the Indian Ocean Dipole, The Straits Times reported.",
+      "sourceIds": [
+        "s3"
+      ]
+    },
+    {
+      "text": "ASMC counted 327 hotspots in Kalimantan, 191 in Sumatra and 1 in Sarawak on 29 September 2026, according to Malaysia's DOE.",
+      "sourceIds": [
+        "s6"
+      ]
+    },
+    {
+      "text": "NEA reported smoke drifting from Kalimantan under southeasterly winds in mid-October, with smoke also seen over Sumatra, and expected a shift to southeasterly or southerly winds to reduce transport.",
+      "sourceIds": [
+        "s9"
+      ]
+    },
+    {
+      "text": "Al Jazeera reported that fires had burned at least 200,000 hectares across six Indonesian provinces in what it described as Indonesia's worst fire season in over a decade.",
+      "sourceIds": [
+        "s5"
+      ]
+    }
+  ],
+  "impacts": [
+    {
+      "kind": "other",
+      "certainty": "reported",
+      "text": "Sarawak temporarily closed 647 schools, with about 198,000 students, from 7 to 11 September, switching to home-based learning.",
+      "sourceIds": [
+        "s1"
+      ]
+    },
+    {
+      "kind": "other",
+      "certainty": "reported",
+      "text": "On 9 October schools were closed in Kuala Lumpur, Putrajaya, Johor, Malacca, Negeri Sembilan, Pahang and Selangor, affecting about two million students, Al Jazeera reported.",
+      "sourceIds": [
+        "s5"
+      ]
+    },
+    {
+      "kind": "health",
+      "certainty": "reported",
+      "text": "Indonesia's Ministry of Health recorded more than 170,000 respiratory infections, according to Al Jazeera, which noted the true number is likely higher.",
+      "sourceIds": [
+        "s5"
+      ]
+    },
+    {
+      "kind": "health",
+      "certainty": "reported",
+      "text": "In mid-August Malaysia's Ministry of Health said its 68 sentinel facilities had not yet seen a significant rise in haze-related illness, and put all health facilities on alert.",
+      "sourceIds": [
+        "s11"
+      ]
+    }
+  ],
+  "responses": [
+    {
+      "actor": "Government of Malaysia",
+      "text": "An emergency was declared in Serian, Sarawak, announced on 4 September 2026 by the Prime Minister's Office with the King's consent, after an API of 521 at 2pm that day.",
+      "sourceIds": [
+        "s1"
+      ]
+    },
+    {
+      "actor": "Department of Environment Malaysia",
+      "text": "Stepped up inspections and patrols in fire-prone peatland and landfill areas under the National Haze Action Plan and asked industry to cut emissions where the API exceeds 300.",
+      "sourceIds": [
+        "s6"
+      ]
+    },
+    {
+      "actor": "Prime Minister of Malaysia",
+      "text": "Said he had spoken with Indonesia's President, who agreed to take 'the necessary steps', and asked for an urgent meeting of ASEAN environment ministers, according to Al Jazeera.",
+      "sourceIds": [
+        "s5"
+      ]
+    },
+    {
+      "actor": "Haze Task Force, Singapore",
+      "text": "Stepped up public awareness from 24 August, asking doctors to advise vulnerable groups, schools to check on students and workplaces to follow haze advisories.",
+      "sourceIds": [
+        "s7"
+      ]
+    },
+    {
+      "actor": "Ministry of Health, Brunei",
+      "text": "Advised the public to reduce strenuous or prolonged outdoor activity, and vulnerable groups to limit or avoid it, as all districts recorded PSI above 100.",
+      "sourceIds": [
+        "s4"
+      ]
+    },
+    {
+      "actor": "DENR Environmental Management Bureau, Philippines",
+      "text": "Said haze over parts of the Philippines was possibly associated with smoke from fires in Kalimantan and advised limiting outdoor exposure in hazy areas.",
+      "sourceIds": [
+        "s12"
+      ]
+    },
+    {
+      "actor": "ASEAN Specialised Meteorological Centre",
+      "text": "Raised the southern ASEAN region to Alert Level 2 on 3 August and Alert Level 3 on 26 August 2026.",
+      "sourceIds": [
+        "s2"
+      ]
+    }
+  ],
+  "policy": [],
+  "openQuestions": [
+    "The season is ongoing. Final dates, peaks and totals will change.",
+    "Malaysian API values are quoted in the text from press reports of DOE data. Malaysia's API is the highest of six sub-indices: 24 hours for PM2.5 (DOE to Malaysiakini, 2019) and PM10, but 1 or 8 hours for the gases. A press-quoted API cannot be pinned to one averaging period, so it stays in the text.",
+    "Brunei's PSI readings (for example 164 in Belait at 9am on 5 September) are reported without an averaging period.",
+    "Indonesia's official burned-area and hotspot totals for 2026 have not been sourced from the environment ministry."
+  ],
+  "imagery": [],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "647 Schools In Sarawak To Close As Emergency Declared In Serian Due To Haze",
+      "publisher": "SAYS",
+      "url": "https://says.com/my/news/647-schools-in-sarawak-to-close-as-emergency-declared-in-serian-due-to-haze",
+      "publishedDate": "2026-09-04",
+      "accessedDate": "2026-10-23",
+      "kind": "journalism"
+    },
+    {
+      "id": "s2",
+      "title": "ASMC Alerts",
+      "publisher": "ASEAN Specialised Meteorological Centre",
+      "url": "https://asmc.asean.org/asmc-alerts/",
+      "publishedDate": null,
+      "accessedDate": "2026-10-23",
+      "kind": "intergovernmental"
+    },
+    {
+      "id": "s3",
+      "title": "Air quality across Singapore in unhealthy range for the first time since 2019",
+      "publisher": "The Star (Malaysia), from The Straits Times/ANN",
+      "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/09/15/air-quality-across-singapore-in-unhealthy-range-for-the-first-time-since-2019",
+      "publishedDate": "2026-09-15",
+      "accessedDate": "2026-10-23",
+      "kind": "journalism"
+    },
+    {
+      "id": "s4",
+      "title": "Haze blankets Brunei as all districts hit unhealthy levels",
+      "publisher": "The Star (Malaysia), from Borneo Bulletin/ANN",
+      "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/09/05/haze-blankets-brunei-as-all-districts-hit-unhealthy-levels",
+      "publishedDate": "2026-09-05",
+      "accessedDate": "2026-10-23",
+      "kind": "journalism"
+    },
+    {
+      "id": "s5",
+      "title": "Malaysia shuts schools as haze from Indonesian fires chokes Southeast Asia",
+      "publisher": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/10/9/malaysia-shuts-schools-as-haze-from-indonesian-fires-chokes-southeast-asia",
+      "publishedDate": "2026-10-09",
+      "accessedDate": "2026-10-23",
+      "kind": "journalism"
+    },
+    {
+      "id": "s6",
+      "title": "DOE: Over 500 hotspots in Kalimantan and Sumatra behind haze in Malaysia",
+      "publisher": "Malay Mail (Bernama)",
+      "url": "https://www.malaymail.com/news/malaysia/2026/09/30/doe-over-500-hotspots-in-kalimantan-and-sumatra-behind-haze-in-malaysia/237144",
+      "publishedDate": "2026-09-30",
+      "accessedDate": "2026-10-23",
+      "kind": "journalism"
+    },
+    {
+      "id": "s7",
+      "title": "Singapore haze tips air quality into unhealthy range for first time since 2023",
+      "publisher": "Malay Mail",
+      "url": "https://www.malaymail.com/amp/news/singapore/2026/09/04/singapore-haze-tips-air-quality-into-unhealthy-range-for-first-time-since-2023/233833",
+      "publishedDate": "2026-09-04",
+      "accessedDate": "2026-10-23",
+      "kind": "journalism"
+    },
+    {
+      "id": "s8",
+      "title": "Haze Situation Update (9 October 2026)",
+      "publisher": "National Environment Agency, Singapore",
+      "url": "https://www.nea.gov.sg/media/news/advisories/index/haze-situation-update-9-october-2026",
+      "publishedDate": "2026-10-09",
+      "accessedDate": "2026-10-23",
+      "kind": "official"
+    },
+    {
+      "id": "s9",
+      "title": "Haze Situation Update (15 October 2026)",
+      "publisher": "National Environment Agency, Singapore",
+      "url": "https://www.nea.gov.sg/media/news/advisories/index/haze-situation-update-15-october-2026",
+      "publishedDate": "2026-10-15",
+      "accessedDate": "2026-10-23",
+      "kind": "official"
+    },
+    {
+      "id": "s10",
+      "title": "Real-time API: PSI readings for 20 October 2026",
+      "publisher": "National Environment Agency, via data.gov.sg",
+      "url": "https://api-open.data.gov.sg/v2/real-time/api/psi?date=2026-10-20",
+      "publishedDate": "2026-10-20",
+      "accessedDate": "2026-10-23",
+      "kind": "official"
+    },
+    {
+      "id": "s11",
+      "title": "No significant rise in haze-related illnesses so far, says Health Ministry",
+      "publisher": "The Star (Malaysia), from Bernama",
+      "url": "https://www.thestar.com.my/news/nation/2026/08/15/no-significant-rise-in-haze-related-illnesses-so-far-says-health-ministry",
+      "publishedDate": "2026-08-15",
+      "accessedDate": "2026-10-23",
+      "kind": "journalism"
+    },
+    {
+      "id": "s12",
+      "title": "15 Metro Manila stations record good PM2.5 AQI amid haze",
+      "publisher": "Daily Tribune (Philippines)",
+      "url": "https://tribune.net.ph/2026/09/14/15-metro-manila-stations-record-good-pm25-aqi-amid-haze",
+      "publishedDate": "2026-09-14",
+      "accessedDate": "2026-10-23",
+      "kind": "journalism"
+    },
+    {
+      "id": "s13",
+      "title": "DOE: 'Absolutely no deception' in API readings",
+      "publisher": "Malaysiakini",
+      "url": "https://www.malaysiakini.com/news/493169",
+      "publishedDate": "2019-09-24",
+      "accessedDate": "2026-10-23",
+      "kind": "journalism"
+    }
+  ],
+  "lastReviewed": "2026-10-23"
+}

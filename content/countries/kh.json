@@ -1,0 +1,29 @@
+{
+  "code": "KH",
+  "status": "partial",
+  "agencies": [
+    { "name": "Ministry of Environment", "role": "Runs a nationwide network that directly measures pollutants such as PM2.5 and publishes official readings.", "url": "https://www.khaosodenglish.com/news/asean/2026/03/30/cambodia-rejects-iqair-data-defends-official-air-quality-readings/", "sourceIds": ["s1"] }
+  ],
+  "nationalIndex": null,
+  "monitoring": [
+    { "text": "In March 2026 the Ministry reported an average PM2.5 of 25.32 µg/m³ for the 24 hours to 07:00 on 29 March, which it called good and below its 50 µg/m³ standard.", "sourceIds": ["s1"] },
+    { "text": "The Ministry disputed IQAir figures, saying satellite data and modelling may not capture local conditions and may misread humidity or fog as pollution.", "sourceIds": ["s1"] }
+  ],
+  "seasonalPattern": [
+    { "text": "GGGI notes that pollution levels in Cambodia are often highest in the dry season.", "sourceIds": ["s2"] }
+  ],
+  "healthContext": [],
+  "policy": [
+    { "date": "2025-09-03", "text": "GGGI published a situation assessment of Cambodia's air quality monitoring under the AFD-funded Air Quality Improvement Program, saying the monitoring system needs strengthening.", "sourceIds": ["s2"] }
+  ],
+  "dataAccess": [],
+  "openQuestions": [
+    "Station counts, the index used and where official readings are published have not been established.",
+    "GGGI's full assessment report has not been reviewed."
+  ],
+  "sources": [
+    { "id": "s1", "title": "Cambodia rejects IQAir data, defends official air quality readings", "publisher": "Khaosod English", "url": "https://www.khaosodenglish.com/news/asean/2026/03/30/cambodia-rejects-iqair-data-defends-official-air-quality-readings/", "publishedDate": "2026-03-30", "accessedDate": "2026-10-23", "kind": "journalism" },
+    { "id": "s2", "title": "Situation Assessment Report: Air Quality Monitoring in Cambodia", "publisher": "Global Green Growth Institute (GGGI)", "url": "https://gggi.org/report/situation-assessment-report-air-quality-monitoring-in-cambodia/", "publishedDate": "2025-09-03", "accessedDate": "2026-10-23", "kind": "ngo" }
+  ],
+  "lastReviewed": "2026-10-23"
+}

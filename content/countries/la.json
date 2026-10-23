@@ -1,0 +1,29 @@
+{
+  "code": "LA",
+  "status": "partial",
+  "agencies": [
+    { "name": "Department of Forestry", "role": "Tracks fire hotspots through the Forestry Information Management System and reports them by forest category.", "url": "https://kpl.gov.la/detail.aspx?id=97674", "sourceIds": ["s1"] }
+  ],
+  "nationalIndex": null,
+  "monitoring": [
+    { "text": "The Department of Forestry reported 16,395 hotspots between 1 January and 31 March 2026, and 895 on 1 April alone, according to the Lao News Agency.", "sourceIds": ["s1"] },
+    { "text": "The Lao News Agency reported that PM2.5 exceeded safety standards in nearly all provinces on 1 April 2026. No concentrations were given.", "sourceIds": ["s1"] }
+  ],
+  "seasonalPattern": [
+    { "text": "ASMC's alerts for the northern ASEAN and Mekong region typically run from about December to May.", "sourceIds": ["s2"] }
+  ],
+  "healthContext": [
+    { "text": "Public health officials urged people to wear N95 or similar masks outdoors, avoid outdoor exercise and stop open burning.", "sourceIds": ["s1"] }
+  ],
+  "policy": [],
+  "dataAccess": [],
+  "openQuestions": [
+    "Whether Laos publishes a national air quality index, and which agency runs PM2.5 monitoring, has not been established.",
+    "No public PM2.5 data source has been found."
+  ],
+  "sources": [
+    { "id": "s1", "title": "Department of Forestry Laos Reports Over 16,000 Hotspots, Warns of Transboundary PM2.5 Health Risks", "publisher": "Lao News Agency (KPL)", "url": "https://kpl.gov.la/detail.aspx?id=97674", "publishedDate": "2026-04", "accessedDate": "2026-10-23", "kind": "journalism" },
+    { "id": "s2", "title": "ASMC Alerts", "publisher": "ASEAN Specialised Meteorological Centre", "url": "https://asmc.asean.org/asmc-alerts/", "publishedDate": null, "accessedDate": "2026-10-23", "kind": "intergovernmental" }
+  ],
+  "lastReviewed": "2026-10-23"
+}

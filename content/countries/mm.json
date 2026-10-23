@@ -1,0 +1,29 @@
+{
+  "code": "MM",
+  "status": "partial",
+  "agencies": [
+    { "name": "Environmental Conservation Department (ECD)", "role": "Myanmar's counterpart to Thailand's Pollution Control Department in cooperation on haze monitoring and data sharing.", "url": "https://www.khaosodenglish.com/news/international/2026/05/19/thai-myanmar-plan-to-link-platforms-and-share-haze-data/", "sourceIds": ["s1"] }
+  ],
+  "nationalIndex": null,
+  "monitoring": [
+    { "text": "In May 2026 Thailand's PCD director-general cited Myanmar's limited air quality monitoring infrastructure and incomplete environmental databases as major challenges, and Thailand agreed to help Myanmar build online haze reporting.", "sourceIds": ["s1"] },
+    { "text": "According to Myanmar government data cited by PCD, Myanmar reduced wildfire hotspots by 12 percent in 2025 compared with 2024.", "sourceIds": ["s1"] }
+  ],
+  "seasonalPattern": [
+    { "text": "ASMC's alerts for the northern ASEAN and Mekong region typically run from about December to May.", "sourceIds": ["s2"] }
+  ],
+  "healthContext": [],
+  "policy": [
+    { "date": "2026-05-19", "text": "Myanmar and Thailand agreed to integrate monitoring platforms and share air pollution data under a long-term regional strategy.", "sourceIds": ["s1"] }
+  ],
+  "dataAccess": [],
+  "openQuestions": [
+    "Whether Myanmar publishes an official air quality index or station data is unknown.",
+    "No official public data source has been identified."
+  ],
+  "sources": [
+    { "id": "s1", "title": "Thai-Myanmar plan to link platforms and share haze data", "publisher": "Khaosod English", "url": "https://www.khaosodenglish.com/news/international/2026/05/19/thai-myanmar-plan-to-link-platforms-and-share-haze-data/", "publishedDate": "2026-05-19", "accessedDate": "2026-10-23", "kind": "journalism" },
+    { "id": "s2", "title": "ASMC Alerts", "publisher": "ASEAN Specialised Meteorological Centre", "url": "https://asmc.asean.org/asmc-alerts/", "publishedDate": null, "accessedDate": "2026-10-23", "kind": "intergovernmental" }
+  ],
+  "lastReviewed": "2026-10-23"
+}

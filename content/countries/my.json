@@ -1,0 +1,56 @@
+{
+  "code": "MY",
+  "status": "researched",
+  "agencies": [
+    { "name": "Department of Environment Malaysia (Jabatan Alam Sekitar, DOE)", "role": "Runs the national air quality monitoring network and publishes the Air Pollutant Index through the APIMS portal and the MyJAS EQMS app.", "url": "https://www.doe.gov.my/en/api-2/", "sourceIds": ["s1", "s2"] },
+    { "name": "Ministry of Health Malaysia (KKM)", "role": "Issues haze health advice and monitors haze-related illness through sentinel health facilities near DOE monitoring stations.", "url": "https://www.moh.gov.my/", "sourceIds": ["s3", "s4"] },
+    { "name": "Malaysian Meteorological Department (MET Malaysia)", "role": "Provides weather and wind information used to explain haze transport, and runs cloud seeding operations with the armed forces.", "url": "https://www.met.gov.my/", "sourceIds": ["s5", "s6"] },
+    { "name": "Department of Statistics Malaysia (DOSM)", "role": "Publishes monthly national pollutant averages derived from DOE observations on OpenDOSM under CC BY 4.0.", "url": "https://open.dosm.gov.my/data-catalogue/air_pollution", "sourceIds": ["s7"] }
+  ],
+  "nationalIndex": {
+    "name": "Air Pollutant Index (Indeks Pencemar Udara, IPU)",
+    "description": "DOE's index based on six criteria pollutants, with PM2.5 the main driver during haze. Categories as quoted by RTM: 0–50 good, 51–100 moderate, 101–200 unhealthy, 201–300 very unhealthy, 301 and above hazardous. It is not the same as Singapore's PSI or the US AQI.",
+    "sourceIds": ["s1", "s2"]
+  },
+  "monitoring": [
+    { "text": "DOE says its API draws on 68 monitoring stations and six criteria pollutants, and that APIMS and the MyJAS EQMS app update hourly.", "sourceIds": ["s1"] },
+    { "text": "DOE has said that commercial apps often use different scales, thresholds, averaging periods, uncalibrated sensors or satellite estimates, so their figures cannot be compared with the API from single headline numbers.", "sourceIds": ["s1"] }
+  ],
+  "seasonalPattern": [
+    { "text": "ASMC's alert log shows the southern ASEAN dry season advisory, which covers Malaysia, typically starting around June or July and ending in October in recent years.", "sourceIds": ["s8"] },
+    { "text": "In 2019 Sarawak's worst haze since 1997 ran through August and September, combining smoke from Kalimantan with local peat fires near Miri.", "sourceIds": ["s9"] }
+  ],
+  "healthContext": [
+    { "text": "The Ministry of Health says children, older adults and people with chronic illness are at greater risk, and that haze can worsen asthma, COPD and heart disease.", "sourceIds": ["s4"] },
+    { "text": "In 2019 the Director-General of Health advised postponing outdoor gatherings and sports when the API exceeds 100.", "sourceIds": ["s3"] }
+  ],
+  "policy": [
+    { "date": "2026-09", "text": "DOE describes its haze response as operating under the National Haze Action Plan (PTJK), which assigns agency roles according to haze severity.", "sourceIds": ["s10"] },
+    { "date": "2026-09-04", "text": "An emergency was declared in Serian, Sarawak, after an API reading of 521.", "sourceIds": ["s11"] },
+    { "date": "2013-06-23", "text": "An emergency was declared in Muar and Ledang, Johor, after an API reading reported at about 750.", "sourceIds": ["s12"] }
+  ],
+  "dataAccess": [
+    { "name": "APIMS (Air Pollutant Index Management System)", "url": "https://eqms.doe.gov.my/apims/main", "accessMethod": "web_only", "note": "Hourly API on DOE's website. No public API, download or reuse licence is documented, so this platform does not ingest it." },
+    { "name": "OpenDOSM: Monthly Air Pollution", "url": "https://open.dosm.gov.my/data-catalogue/air_pollution", "accessMethod": "documented_api", "note": "National monthly mean concentrations per pollutant, CC BY 4.0, via api.data.gov.my. Connected on this platform as a historical series." }
+  ],
+  "openQuestions": [
+    "DOE's methodology document for the API (an embedded flipbook) could not be machine-read, so band labels are provisional and the averaging basis of the API is not documented here.",
+    "Live station readings will remain unavailable on this platform until DOE offers a documented access method.",
+    "The monthly OpenDOSM series ended at December 2024 when checked on 23 October 2026."
+  ],
+  "sources": [
+    { "id": "s1", "title": "Hazy math: DoE explains why your AQI says 250 when the official API is 175", "publisher": "Malay Mail", "url": "https://www.malaymail.com/news/malaysia/2026/10/08/hazy-math-doe-explains-why-your-aqi-says-250-when-the-official-api-is-175/238237", "publishedDate": "2026-10-08", "accessedDate": "2026-10-23", "kind": "journalism" },
+    { "id": "s2", "title": "38 kawasan di Semenanjung Malaysia catat IPU tidak sihat petang ini", "publisher": "RTM (Radio Televisyen Malaysia)", "url": "https://berita.rtm.gov.my/nasional/senarai-berita-nasional/senarai-artikel/38-kawasan-di-semenanjung-malaysia-catat-ipu-tidak-sihat-petang-ini/", "publishedDate": "2026-09-16", "accessedDate": "2026-10-23", "kind": "official" },
+    { "id": "s3", "title": "Kenyataan Akhbar KPK 14 Sept 2019: Nasihat berkaitan penganjuran aktiviti fizikal semasa jerebu", "publisher": "Ministry of Health Malaysia", "url": "https://www.moh.gov.my/images/perkhidmatan-utama/info-kesihatan/jerebu/pdf/KENYATAAN_AKHBAR_KPK_14_SEPT_2019_Nasihat_berkaitan_penganjuran_aktiviti_fizikal_semasa_jerebu.pdf", "publishedDate": "2019-09-14", "accessedDate": "2026-10-23", "kind": "official" },
+    { "id": "s4", "title": "No significant rise in haze-related illnesses so far, says Health Ministry", "publisher": "The Star (Malaysia), from Bernama", "url": "https://www.thestar.com.my/news/nation/2026/08/15/no-significant-rise-in-haze-related-illnesses-so-far-says-health-ministry", "publishedDate": "2026-08-15", "accessedDate": "2026-10-23", "kind": "journalism" },
+    { "id": "s5", "title": "Unhealthy air quality recorded in four new locations amid worsening haze", "publisher": "The Vibes", "url": "https://www.thevibes.com/articles/news/110740/unhealthy-air-quality-recorded-in-four-new-locations-amid-worsening-haze", "publishedDate": "2025-07-21", "accessedDate": "2026-10-23", "kind": "journalism" },
+    { "id": "s6", "title": "Year in Review: Sarawak hit by choking haze, drought", "publisher": "The Borneo Post", "url": "https://www.theborneopost.com/2019/12/28/sarawak-hit-by-choking-haze-drought/", "publishedDate": "2019-12-28", "accessedDate": "2026-10-23", "kind": "journalism" },
+    { "id": "s7", "title": "Monthly Air Pollution", "publisher": "OpenDOSM, Department of Statistics Malaysia", "url": "https://open.dosm.gov.my/data-catalogue/air_pollution", "publishedDate": null, "accessedDate": "2026-10-23", "kind": "official" },
+    { "id": "s8", "title": "ASMC Alerts", "publisher": "ASEAN Specialised Meteorological Centre", "url": "https://asmc.asean.org/asmc-alerts/", "publishedDate": null, "accessedDate": "2026-10-23", "kind": "intergovernmental" },
+    { "id": "s9", "title": "Year in Review: Sarawak hit by choking haze, drought", "publisher": "The Borneo Post", "url": "https://www.theborneopost.com/2019/12/28/sarawak-hit-by-choking-haze-drought/", "publishedDate": "2019-12-28", "accessedDate": "2026-10-23", "kind": "journalism" },
+    { "id": "s10", "title": "DOE: Over 500 hotspots in Kalimantan and Sumatra behind haze in Malaysia", "publisher": "Malay Mail (Bernama)", "url": "https://www.malaymail.com/news/malaysia/2026/09/30/doe-over-500-hotspots-in-kalimantan-and-sumatra-behind-haze-in-malaysia/237144", "publishedDate": "2026-09-30", "accessedDate": "2026-10-23", "kind": "journalism" },
+    { "id": "s11", "title": "647 Schools In Sarawak To Close As Emergency Declared In Serian Due To Haze", "publisher": "SAYS", "url": "https://says.com/my/news/647-schools-in-sarawak-to-close-as-emergency-declared-in-serian-due-to-haze", "publishedDate": "2026-09-04", "accessedDate": "2026-10-23", "kind": "journalism" },
+    { "id": "s12", "title": "Malaysia smog worst in 16 years due to Indonesia fires", "publisher": "Agence France-Presse, via INQUIRER.net", "url": "https://newsinfo.inquirer.net/431485/malaysia-smog-worst-in-16-years-due-to-indonesia-fires", "publishedDate": "2013-06-23", "accessedDate": "2026-10-23", "kind": "journalism" }
+  ],
+  "lastReviewed": "2026-10-23"
+}

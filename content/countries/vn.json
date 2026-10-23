@@ -1,0 +1,34 @@
+{
+  "code": "VN",
+  "status": "partial",
+  "agencies": [
+    { "name": "Vietnam Environment Administration (VEA)", "role": "Issued the technical guidance for calculating the Vietnam Air Quality Index (VN_AQI).", "url": "https://tapchimoitruong.vn/gi/english-edition-i--2019-42/New-calculation-of-the-Vi%E1%BB%87t-Nam-Air-Quality-Index-18303", "sourceIds": ["s1"] }
+  ],
+  "nationalIndex": {
+    "name": "Vietnam Air Quality Index (VN_AQI)",
+    "description": "Set by VEA Decision 1459/QD-TCMT of 12 November 2019, replacing Decision 878. Uses O3, PM2.5, PM10, CO, SO2 and NO2, with hourly and daily values and six bands: Good, Average, Poor, Bad, Very bad and Harmful.",
+    "sourceIds": ["s1"]
+  },
+  "monitoring": [
+    { "text": "ASMC reported moderate transboundary haze over southern Vietnam in mid-September 2026, according to Bernama.", "sourceIds": ["s2"] }
+  ],
+  "seasonalPattern": [
+    { "text": "In March 2025 satellite data showed extensive fire activity across Myanmar, Thailand, Laos, Cambodia and Vietnam, Malay Mail reported.", "sourceIds": ["s3"] }
+  ],
+  "healthContext": [],
+  "policy": [
+    { "date": "2019-11-12", "text": "VEA Decision 1459/QD-TCMT introduced the current method for calculating VN_AQI.", "sourceIds": ["s1"] }
+  ],
+  "dataAccess": [],
+  "openQuestions": [
+    "Public data access (portals, APIs, licences) for VN_AQI has not been checked.",
+    "Health guidance linked to VN_AQI bands has not been sourced.",
+    "How often southern Vietnam is affected by transboundary haze from the south of the region is not established."
+  ],
+  "sources": [
+    { "id": "s1", "title": "New calculation of the Việt Nam Air Quality Index", "publisher": "Vietnam Environment Administration Magazine (English edition)", "url": "https://tapchimoitruong.vn/gi/english-edition-i--2019-42/New-calculation-of-the-Vi%E1%BB%87t-Nam-Air-Quality-Index-18303", "publishedDate": "2019", "accessedDate": "2026-10-23", "kind": "official" },
+    { "id": "s2", "title": "Singapore Air Quality Hits Unhealthy Levels Island-wide", "publisher": "Bernama", "url": "https://bernama.com/en/news.php?id=2607465", "publishedDate": "2026-09-15", "accessedDate": "2026-10-23", "kind": "journalism" },
+    { "id": "s3", "title": "Haze returns to Singapore as regional hot spot activity intensifies", "publisher": "Malay Mail", "url": "https://www.malaymail.com/news/singapore/2025/03/26/haze-returns-to-singapore-as-regional-hot-spot-activity-intensifies/170917", "publishedDate": "2025-03-26", "accessedDate": "2026-10-23", "kind": "journalism" }
+  ],
+  "lastReviewed": "2026-10-23"
+}

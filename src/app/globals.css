@@ -1,26 +1,257 @@
 @import "tailwindcss";
+@import "@fontsource-variable/newsreader/opsz.css";
+@import "@fontsource-variable/newsreader/opsz-italic.css";
+@import "@fontsource-variable/atkinson-hyperlegible-next/wght.css";
+@import "leaflet/dist/leaflet.css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/*
+ * Design tokens.
+ * Principle: colour belongs to air quality. Interface chrome stays in charcoal and forest greens;
+ * only readings carry colour, and always alongside a text label.
+ */
+@theme static {
+  --color-ground: #121815;
+  --color-forest: #18261f;
+  --color-canopy: #1f3128;
+  --color-moss: #2a3f34;
+  --color-line: #2f4338;
+  --color-line-strong: #46604f;
+  --color-smoke: #e4e1d8;
+  --color-ash: #a9b2aa;
+  --color-dim: #8e9a91;
+  --color-lichen: #b9d4c0;
+  --color-lichen-strong: #d6e9da;
+
+  /* Air quality band colours (restrained, distinguishable, never the only signal). */
+  --color-band-1: #6db58c;
+  --color-band-2: #d0bd5c;
+  --color-band-3: #e08a45;
+  --color-band-4: #d0605e;
+  --color-band-5: #a585d6;
+  --color-band-none: #5d6b62;
+
+  --color-ember: #e07a4f;
+  --color-demo: #c9a0dc;
+  --color-warn: #e3b55c;
+  --color-error: #e88079;
+
+  --font-display: "Newsreader Variable", "Iowan Old Style", Georgia, serif;
+  --font-sans: "Atkinson Hyperlegible Next Variable", "Segoe UI", system-ui, sans-serif;
+
+  /* Type scale, roughly a 1.25 ratio from a 17px base. */
+  --text-xs: 0.8125rem;
+  --text-xs--line-height: 1.4;
+  --text-sm: 0.9375rem;
+  --text-sm--line-height: 1.5;
+  --text-base: 1.0625rem;
+  --text-base--line-height: 1.6;
+  --text-lg: 1.25rem;
+  --text-lg--line-height: 1.45;
+  --text-xl: 1.5625rem;
+  --text-xl--line-height: 1.3;
+  --text-2xl: 2rem;
+  --text-2xl--line-height: 1.15;
+  --text-3xl: 2.75rem;
+  --text-3xl--line-height: 1.05;
+  --text-4xl: 4rem;
+  --text-4xl--line-height: 1;
+  --text-numeral: 6rem;
+  --text-numeral--line-height: 0.9;
+
+  --radius-control: 6px;
+  --radius-panel: 10px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  html {
+    background: var(--color-ground);
+    color: var(--color-smoke);
+    color-scheme: dark;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    font-family: var(--font-sans);
+    font-size: var(--text-base);
+    line-height: 1.6;
+    background: var(--color-ground);
+    min-height: 100dvh;
+    text-rendering: optimizeLegibility;
+  }
+  p,
+  a,
+  li,
+  dd,
+  h1,
+  h2,
+  h3 {
+    overflow-wrap: anywhere;
+  }
+  td,
+  th,
+  td a {
+    overflow-wrap: normal;
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+  }
+  a {
+    color: var(--color-lichen);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+  }
+  a:hover {
+    color: var(--color-lichen-strong);
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-lichen);
+    outline-offset: 2px;
+    border-radius: 3px;
+  }
+  ::selection {
+    background: var(--color-moss);
+    color: var(--color-smoke);
+  }
+  table {
+    font-variant-numeric: tabular-nums;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .wrap {
+    width: 100%;
+    max-width: 76rem;
+    margin-inline: auto;
+    padding-inline: 1rem;
+  }
+  @media (min-width: 768px) {
+    .wrap {
+      padding-inline: 2rem;
+    }
+  }
+
+  /* Long-form editorial text: serif, narrower measure, more leading. */
+  .prose-editorial {
+    font-family: var(--font-display);
+    font-size: 1.1875rem;
+    line-height: 1.7;
+    max-width: 66ch;
+  }
+  .prose-editorial p + p {
+    margin-top: 1em;
+  }
+
+  .measure {
+    max-width: 68ch;
+  }
+
+  .numeral {
+    font-family: var(--font-display);
+    font-variant-numeric: lining-nums tabular-nums;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+  }
+
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--text-sm);
+  }
+  .data-table th {
+    text-align: left;
+    font-weight: 600;
+    color: var(--color-ash);
+    padding: 0.5rem 0.75rem 0.5rem 0;
+    border-bottom: 1px solid var(--color-line-strong);
+    vertical-align: bottom;
+  }
+  .data-table td {
+    padding: 0.55rem 0.75rem 0.55rem 0;
+    border-bottom: 1px solid var(--color-line);
+    vertical-align: top;
+  }
+  .data-table td.num,
+  .data-table th.num {
+    text-align: right;
+  }
+
+  .field-label {
+    display: block;
+    font-size: var(--text-xs);
+    color: var(--color-ash);
+    margin-bottom: 0.3rem;
+  }
+  .field {
+    width: 100%;
+    min-height: 2.5rem;
+    background: var(--color-forest);
+    border: 1px solid var(--color-line-strong);
+    border-radius: var(--radius-control);
+    color: var(--color-smoke);
+    padding: 0.4rem 0.6rem;
+    font: inherit;
+    font-size: var(--text-sm);
+  }
+  .field:hover {
+    border-color: var(--color-ash);
+  }
+
+  .cite {
+    font-size: 0.72em;
+    vertical-align: super;
+    line-height: 0;
+    margin-left: 0.15em;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+}
+
+/* Leaflet, restyled to sit in the dark palette. */
+.leaflet-container {
+  background: #0e1411;
+  font-family: var(--font-sans);
+}
+.leaflet-control-attribution {
+  background: rgba(18, 24, 21, 0.85) !important;
+  color: var(--color-ash) !important;
+  font-size: 11px;
+}
+.leaflet-control-attribution a {
+  color: var(--color-lichen) !important;
+}
+.leaflet-bar a {
+  background: var(--color-forest) !important;
+  color: var(--color-smoke) !important;
+  border-color: var(--color-line) !important;
+}
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: var(--color-canopy);
+  color: var(--color-smoke);
+}
+.hw-marker {
+  background: transparent;
+  border: none;
+}
+.hw-marker:focus-visible {
+  outline: none;
+}
+.hw-marker:focus-visible > span {
+  outline: 2px solid var(--color-lichen);
+  outline-offset: 2px;
 }

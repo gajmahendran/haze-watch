@@ -1,0 +1,136 @@
+{
+  "lastReviewed": "2026-10-23",
+  "topics": [
+    {
+      "topic": "what-is-haze",
+      "facts": [
+        { "text": "Haze is an airborne mixture of pollutants, including soot particles, carbon dioxide and other gases.", "sourceIds": ["s1"] },
+        { "text": "NEA says the transboundary haze that affects Singapore mainly comes from forest and peat fires in the region.", "sourceIds": ["s2"] },
+        { "text": "Poor visibility does not always mean more pollution: humidity and water vapour also reduce visibility, according to NEA.", "sourceIds": ["s2"] },
+        { "text": "A burning smell can come from local burning, but the gases that cause the smell are not the pollutants used to measure air quality.", "sourceIds": ["s2"] }
+      ],
+      "officialGuidance": [
+        { "title": "Air pollution FAQs", "publisher": "National Environment Agency, Singapore", "url": "https://www.nea.gov.sg/our-services/pollution-control/air-pollution/faqs", "region": "SG" }
+      ]
+    },
+    {
+      "topic": "fire-and-peat",
+      "facts": [
+        { "text": "Peat fires burn the organic-rich soil itself. Flames at the surface can go out while the fire keeps smouldering underground and later reignites, which makes peat fires very hard to extinguish.", "sourceIds": ["s3"] },
+        { "text": "Smoke from smouldering peat stays close to the ground. Researchers at Imperial College London note it is associated with excess deaths in Southeast Asia.", "sourceIds": ["s3"] },
+        { "text": "Peat fires can release up to 100 times more carbon per area burned than fires on other soils, according to the same research summary.", "sourceIds": ["s3"] },
+        { "text": "About a third of the area burned in Indonesia's 2015 fires was peatland, and about 41 percent in 2019, according to the World Bank and a CIFOR assessment respectively.", "sourceIds": ["s4", "s5"] },
+        { "text": "Drier peat sustains faster and larger smouldering fires; wetter peat is less likely to keep smouldering, the Imperial study found.", "sourceIds": ["s3"] }
+      ],
+      "officialGuidance": []
+    },
+    {
+      "topic": "pm25-vs-pm10",
+      "facts": [
+        { "text": "PM10 means inhalable particles with diameters generally 10 micrometres and smaller. PM2.5 means fine particles generally 2.5 micrometres and smaller. An average human hair is about 70 micrometres across.", "sourceIds": ["s6"] },
+        { "text": "Particles smaller than 10 micrometres can get deep into the lungs, and some can enter the bloodstream. Fine particles (PM2.5) pose the greatest health risk, according to the US EPA.", "sourceIds": ["s6"] },
+        { "text": "WHO says PM2.5 can penetrate deep into the lungs and even enter the bloodstream, mainly causing cardiovascular and respiratory effects.", "sourceIds": ["s7"] },
+        { "text": "WHO's 2021 guideline levels are 5 µg/m³ (annual mean) and 15 µg/m³ (24-hour) for PM2.5, and 15 and 45 µg/m³ for PM10. The 24-hour levels are set at the 99th percentile, allowing 3 to 4 exceedance days a year. They are health guidance, not national legal limits.", "sourceIds": ["s17", "s7"] },
+        { "text": "Smoke contributes directly to particle pollution. Many particles also form in the air from chemical reactions of gases such as sulphur dioxide and nitrogen oxides.", "sourceIds": ["s6"] }
+      ],
+      "officialGuidance": [
+        { "title": "Particulate Matter (PM) Basics", "publisher": "US Environmental Protection Agency", "url": "https://www.epa.gov/pm-pollution/particulate-matter-pm-basics", "region": "GLOBAL" }
+      ]
+    },
+    {
+      "topic": "index-meanings",
+      "facts": [
+        { "text": "Singapore's 24-hour PSI is built from 24-hour averages of six pollutants: PM10, PM2.5, SO2, NO2, O3 and CO. Each gets a sub-index and the highest sub-index becomes the PSI.", "sourceIds": ["s2"] },
+        { "text": "Singapore also publishes 1-hour PM2.5 readings for decisions about the next hour. They are a concentration in µg/m³ with four bands, not an index.", "sourceIds": ["s2", "s10"] },
+        { "text": "Malaysia's Air Pollutant Index (API, or IPU in Malay) uses six criteria pollutants from 68 DOE stations, with PM2.5 the main driver during haze, and is updated hourly.", "sourceIds": ["s9"] },
+        { "text": "Indonesia's ISPU, Vietnam's VN_AQI and Thailand's AQI are separate national indices, each defined by its own regulation or guidance.", "sourceIds": ["s19", "s20", "s21"] }
+      ],
+      "officialGuidance": [
+        { "title": "Haze", "publisher": "Ministry of Health, Singapore", "url": "https://www.moh.gov.sg/others/haze/", "region": "SG" }
+      ]
+    },
+    {
+      "topic": "index-differences",
+      "facts": [
+        { "text": "NEA says Singapore referred to the US EPA's AQI when designing the PSI, but the two are not identical, and there is no international standard for computing an air quality index.", "sourceIds": ["s2"] },
+        { "text": "Malaysia's DOE says commercial apps and the API rely on different index scales, models, thresholds, averaging periods and sensors, so a fair comparison needs the same place, time, pollutant and method.", "sourceIds": ["s9"] },
+        { "text": "DOE warns that satellites measure aerosol through the atmosphere rather than at ground level and can mistake cloud or water vapour for haze.", "sourceIds": ["s9"] },
+        { "text": "A 24-hour average and a 1-hour reading of the same pollutant are different quantities. A 1-hour reading can be high while the 24-hour average is still moderate, and vice versa.", "sourceIds": ["s2"] }
+      ],
+      "officialGuidance": []
+    },
+    {
+      "topic": "weather-transport",
+      "facts": [
+        { "text": "In 1997 southeasterly and southwesterly winds during the Southwest Monsoon carried smoke from Sumatra and Kalimantan to Brunei, Malaysia, Thailand and Singapore. The haze eased when the Northeast Monsoon arrived in November.", "sourceIds": ["s11"] },
+        { "text": "El Niño years bring drier conditions that encourage fires. MSS links the 1997 haze to a record El Niño, and Singapore warned of higher haze risk in 2026 because of El Niño and the Indian Ocean Dipole.", "sourceIds": ["s11", "s22"] },
+        { "text": "Wind direction decides who gets the smoke. In October 2026 NEA expected southeasterly winds to carry Kalimantan smoke to Singapore, and a shift to southerly winds to reduce it.", "sourceIds": ["s12"] },
+        { "text": "During the Northeast Monsoon, winds from the north-west and north-east can bring smoke from mainland Southeast Asia south to Singapore.", "sourceIds": ["s13"] },
+        { "text": "ASMC's alert log shows two fire seasons: about June or July to October in the southern region, and about December to May in the northern and Mekong region.", "sourceIds": ["s14"] }
+      ],
+      "officialGuidance": [
+        { "title": "ASMC Alerts", "publisher": "ASEAN Specialised Meteorological Centre", "url": "https://asmc.asean.org/asmc-alerts/", "region": "ASEAN" }
+      ]
+    },
+    {
+      "topic": "health-effects",
+      "facts": [
+        { "text": "WHO says fine particulate matter causes cardiovascular and respiratory disease and cancers, and estimated that ambient air pollution caused 4.2 million premature deaths worldwide in 2019.", "sourceIds": ["s8"] },
+        { "text": "Malaysia's Ministry of Health says children, older adults and people with chronic illness are at greater risk, and that haze can worsen asthma, COPD and heart disease.", "sourceIds": ["s15"] },
+        { "text": "Health agencies monitor conditions such as upper respiratory infections, asthma and conjunctivitis during haze.", "sourceIds": ["s15"] },
+        { "text": "No single index reading decides an individual's risk. Singapore's advice changes with both the reading and whether a person is healthy, elderly, pregnant, a child or has a chronic heart or lung condition.", "sourceIds": ["s10"] }
+      ],
+      "officialGuidance": [
+        { "title": "Haze", "publisher": "Ministry of Health, Singapore", "url": "https://www.moh.gov.sg/others/haze/", "region": "SG" }
+      ]
+    },
+    {
+      "topic": "precautions",
+      "facts": [
+        { "text": "In Singapore, MOH advises healthy people to reduce prolonged or strenuous outdoor exertion at 24-hour PSI 101–200 and to avoid it at 201–300, with stricter advice for vulnerable groups.", "sourceIds": ["s10"] },
+        { "text": "MOH Singapore says N95 masks are not needed for commuting or indoors. It recommends one when PM2.5 is above 250 µg/m³ and you must be outdoors for several hours, and says masks must fit snugly.", "sourceIds": ["s10"] },
+        { "text": "Malaysia's Ministry of Health advises staying indoors where possible, keeping windows closed, using air conditioning on recirculation and filters or purifiers, drinking plenty of water and seeking treatment if unwell.", "sourceIds": ["s15"] },
+        { "text": "Malaysia's Director-General of Health advised in 2019 that outdoor gatherings and sports should be postponed when the API exceeds 100.", "sourceIds": ["s18"] },
+        { "text": "The Philippines' DENR-EMB advised wearing a well-fitting mask, preferably N95 or equivalent, in noticeably hazy areas and limiting outdoor exposure for vulnerable groups.", "sourceIds": ["s16"] }
+      ],
+      "officialGuidance": [
+        { "title": "Haze", "publisher": "Ministry of Health, Singapore", "url": "https://www.moh.gov.sg/others/haze/", "region": "SG" },
+        { "title": "How to Plan Your Outdoor Activities During Haze (July 2024)", "publisher": "National Environment Agency, Singapore", "url": "https://isomer-user-content.by.gov.sg/46/4cac521a-0f04-439c-aae9-2c05044164a1/NEA%20Advisory_How%20to%20Plan%20Your%20Outdoor%20Activities%20During%20Haze_English%20version_July%202024.pdf", "region": "SG" },
+        { "title": "Kenyataan Akhbar KPK: Nasihat berkaitan penganjuran aktiviti fizikal semasa jerebu (14 Sept 2019)", "publisher": "Ministry of Health Malaysia", "url": "https://www.moh.gov.my/images/perkhidmatan-utama/info-kesihatan/jerebu/pdf/KENYATAAN_AKHBAR_KPK_14_SEPT_2019_Nasihat_berkaitan_penganjuran_aktiviti_fizikal_semasa_jerebu.pdf", "region": "MY" }
+      ]
+    },
+    {
+      "topic": "land-use-climate",
+      "facts": [
+        { "text": "The World Bank estimated that Indonesia's 2015 fires emitted roughly 1,750 million tonnes of CO2 equivalent, close to the country's estimated annual economy-wide emissions, and said fires on that scale would make its climate target impossible to reach.", "sourceIds": ["s4"] },
+        { "text": "A CIFOR assessment classified 76 percent of the land burned in Indonesia in 2019 as idle land: former forest turned into degraded scrub by repeated burning.", "sourceIds": ["s5"] },
+        { "text": "The World Bank notes there is no agreed, complete map of Indonesia's peatland, which limits estimates of damage.", "sourceIds": ["s4"] }
+      ],
+      "officialGuidance": []
+    }
+  ],
+  "sources": [
+    { "id": "s1", "title": "Singapore Infopedia article on haze (SIP_2013-08-30_185150), by Jaime Koh and Stephanie Ho", "publisher": "National Library Board, Singapore", "url": "https://eresources.nlb.gov.sg/infopedia/articles/SIP_2013-08-30_185150.html", "publishedDate": null, "accessedDate": "2026-10-23", "kind": "reference" },
+    { "id": "s2", "title": "Air pollution FAQs", "publisher": "National Environment Agency, Singapore", "url": "https://www.nea.gov.sg/our-services/pollution-control/air-pollution/faqs", "publishedDate": null, "accessedDate": "2026-10-23", "kind": "official" },
+    { "id": "s3", "title": "Carbon-releasing 'zombie fires' in peatlands could be dampened by new findings", "publisher": "Imperial College London", "url": "https://www.imperial.ac.uk/news/207573/carbon-releasing-zombie-fires-peatlands-could-dampened/", "publishedDate": "2020-10-30", "accessedDate": "2026-10-23", "kind": "reference" },
+    { "id": "s4", "title": "The Cost of Fire: An Economic Analysis of Indonesia's 2015 Fire Crisis", "publisher": "World Bank", "url": "https://documents1.worldbank.org/curated/pt/776101467990969768/pdf/103668-BRI-Cost-of-Fires-Knowledge-Note-PUBLIC-ADD-NEW-SERIES-Indonesia-Sustainable-Landscapes-Knowledge-Note.pdf", "publishedDate": "2016-02", "accessedDate": "2026-10-23", "kind": "intergovernmental" },
+    { "id": "s5", "title": "Indonesia's 2019 fire season not doomsday for forests but ecological concerns remain", "publisher": "The Jakarta Post", "url": "https://www.thejakartapost.com/news/2019/12/06/indonesias-2019-fire-season-not-doomsday-for-forests-but-ecological-concerns-remain", "publishedDate": "2019-12-06", "accessedDate": "2026-10-23", "kind": "journalism" },
+    { "id": "s6", "title": "Particulate Matter (PM) Basics", "publisher": "US Environmental Protection Agency", "url": "https://www.epa.gov/pm-pollution/particulate-matter-pm-basics", "publishedDate": null, "accessedDate": "2026-10-23", "kind": "official" },
+    { "id": "s7", "title": "New WHO Global Air Quality Guidelines aim to save millions of lives from air pollution", "publisher": "World Health Organization", "url": "https://www.who.int/news/item/22-09-2021-new-who-global-air-quality-guidelines-aim-to-save-millions-of-lives-from-air-pollution", "publishedDate": "2021-09-22", "accessedDate": "2026-10-23", "kind": "intergovernmental" },
+    { "id": "s8", "title": "Ambient (outdoor) air pollution, fact sheet", "publisher": "World Health Organization", "url": "https://www.who.int/news-room/fact-sheets/detail/ambient-(outdoor)-air-quality-and-health", "publishedDate": "2024-10-24", "accessedDate": "2026-10-23", "kind": "intergovernmental" },
+    { "id": "s9", "title": "Hazy math: DoE explains why your AQI says 250 when the official API is 175", "publisher": "Malay Mail", "url": "https://www.malaymail.com/news/malaysia/2026/10/08/hazy-math-doe-explains-why-your-aqi-says-250-when-the-official-api-is-175/238237", "publishedDate": "2026-10-08", "accessedDate": "2026-10-23", "kind": "journalism" },
+    { "id": "s10", "title": "Haze", "publisher": "Ministry of Health, Singapore", "url": "https://www.moh.gov.sg/others/haze/", "publishedDate": null, "accessedDate": "2026-10-23", "kind": "official" },
+    { "id": "s11", "title": "Severe Transboundary Smoke Haze in 1997", "publisher": "Meteorological Service Singapore", "url": "https://www.weather.gov.sg/severe-transboundary-smoke-haze-in-1997/", "publishedDate": null, "accessedDate": "2026-10-23", "kind": "official" },
+    { "id": "s12", "title": "Haze Situation Update (15 October 2026)", "publisher": "National Environment Agency, Singapore", "url": "https://www.nea.gov.sg/media/news/advisories/index/haze-situation-update-15-october-2026", "publishedDate": "2026-10-15", "accessedDate": "2026-10-23", "kind": "official" },
+    { "id": "s13", "title": "Haze returns to Singapore as regional hot spot activity intensifies", "publisher": "Malay Mail", "url": "https://www.malaymail.com/news/singapore/2025/03/26/haze-returns-to-singapore-as-regional-hot-spot-activity-intensifies/170917", "publishedDate": "2025-03-26", "accessedDate": "2026-10-23", "kind": "journalism" },
+    { "id": "s14", "title": "ASMC Alerts", "publisher": "ASEAN Specialised Meteorological Centre", "url": "https://asmc.asean.org/asmc-alerts/", "publishedDate": null, "accessedDate": "2026-10-23", "kind": "intergovernmental" },
+    { "id": "s15", "title": "No significant rise in haze-related illnesses so far, says Health Ministry", "publisher": "The Star (Malaysia), from Bernama", "url": "https://www.thestar.com.my/news/nation/2026/08/15/no-significant-rise-in-haze-related-illnesses-so-far-says-health-ministry", "publishedDate": "2026-08-15", "accessedDate": "2026-10-23", "kind": "journalism" },
+    { "id": "s16", "title": "15 Metro Manila stations record good PM2.5 AQI amid haze", "publisher": "Daily Tribune (Philippines)", "url": "https://tribune.net.ph/2026/09/14/15-metro-manila-stations-record-good-pm25-aqi-amid-haze", "publishedDate": "2026-09-14", "accessedDate": "2026-10-23", "kind": "journalism" },
+    { "id": "s17", "title": "WHO releases new Global Air Quality Guidelines (reproduces the WHO guideline table)", "publisher": "DieselNet", "url": "https://dieselnet.com/news/2021/09who.php", "publishedDate": "2021-09-23", "accessedDate": "2026-10-23", "kind": "reference" },
+    { "id": "s18", "title": "Kenyataan Akhbar KPK 14 Sept 2019: Nasihat berkaitan penganjuran aktiviti fizikal semasa jerebu", "publisher": "Ministry of Health Malaysia", "url": "https://www.moh.gov.my/images/perkhidmatan-utama/info-kesihatan/jerebu/pdf/KENYATAAN_AKHBAR_KPK_14_SEPT_2019_Nasihat_berkaitan_penganjuran_aktiviti_fizikal_semasa_jerebu.pdf", "publishedDate": "2019-09-14", "accessedDate": "2026-10-23", "kind": "official" },
+    { "id": "s19", "title": "Peraturan Menteri LHK Nomor P.14/MENLHK/SETJEN/KUM.1/7/2020 tentang Indeks Standar Pencemar Udara", "publisher": "Ministry of Environment and Forestry, Republic of Indonesia (via peraturan.go.id)", "url": "https://peraturan.go.id/files/bn774-2020.pdf", "publishedDate": "2020-07-15", "accessedDate": "2026-10-23", "kind": "official" },
+    { "id": "s20", "title": "New calculation of the Việt Nam Air Quality Index", "publisher": "Vietnam Environment Administration Magazine (English edition)", "url": "https://tapchimoitruong.vn/gi/english-edition-i--2019-42/New-calculation-of-the-Vi%E1%BB%87t-Nam-Air-Quality-Index-18303", "publishedDate": "2019", "accessedDate": "2026-10-23", "kind": "official" },
+    { "id": "s21", "title": "Thailand adjusts Air Quality Index (AQI) criteria to enhance public awareness and health protection against PM2.5", "publisher": "Government of Thailand (thailand.go.th)", "url": "https://www.thailand.go.th/event-detail/001_04_073", "publishedDate": "2023-08-09", "accessedDate": "2026-10-23", "kind": "official" },
+    { "id": "s22", "title": "Air quality across Singapore in unhealthy range for the first time since 2019", "publisher": "The Star (Malaysia), from The Straits Times/ANN", "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/09/15/air-quality-across-singapore-in-unhealthy-range-for-the-first-time-since-2019", "publishedDate": "2026-09-15", "accessedDate": "2026-10-23", "kind": "journalism" }
+  ]
+}
