@@ -1,3 +1,4 @@
+import { OUTSIDE_FRAME_MARKER } from "@/lib/site";
 import { SEA_BBOX } from "../domain/countries";
 import type { Hotspot } from "../domain/schemas";
 import { countryAt } from "../geo/boundaries";
@@ -137,8 +138,13 @@ export function parseFirmsCsv(
   }
   const warnings: string[] = [];
   if (invalidItems) warnings.push(`${invalidItems} malformed row(s) dropped from ${meta.fallbackSatellite ?? "FIRMS"} file.`);
-  if (outside) warnings.push(`${outside} detection(s) outside the Southeast Asia frame were excluded.`);
-  return { hotspots, invalidItems, warnings, httpStatus: 200, attempts: 1 };
+  if (outside) warnings.push(outsideFrameNote(outside));
+  return { hotspots, invalidItems, outsideFrame: outside, warnings, httpStatus: 200, attempts: 1 };
+}
+
+/** Routine note, not a fault: the regional files include detections beyond this site's map frame. */
+function outsideFrameNote(n: number): string {
+  return `${n.toLocaleString("en-GB")} detection${n === 1 ? "" : "s"} ${OUTSIDE_FRAME_MARKER} (for example in South Asia or Australia) are left out.`;
 }
 
 /** Normalises the raw confidence to low / nominal / high where the source used letters. */
@@ -161,6 +167,13 @@ async function fetchCsv(ctx: AdapterContext, url: string, satellite: string): Pr
   const text = await response.text();
   const result = parseFirmsCsv(text, { retrievedAtUtc: ctx.now.toISOString(), sourceUrl: url.replace(/\/api\/area\/csv\/[^/]+\//, "/api/area/csv/[MAP_KEY]/"), fallbackSatellite: satellite });
   return { ...result, httpStatus: response.status, attempts };
+}
+
+/** Combines the per-satellite "outside the frame" notes into one total. */
+function mergeOutsideFrame(warnings: string[], results: HotspotResult[]): string[] {
+  const rest = warnings.filter((w) => !w.includes(OUTSIDE_FRAME_MARKER));
+  const total = results.reduce((n, r) => n + (r.outsideFrame ?? 0), 0);
+  return total ? [...rest, outsideFrameNote(total)] : rest;
 }
 
 export const firmsViirs: HotspotProvider = {
@@ -205,7 +218,7 @@ export const firmsViirs: HotspotProvider = {
     return {
       hotspots,
       invalidItems: results.reduce((n, r) => n + r.invalidItems, 0),
-      warnings: [...warnings, ...results.flatMap((r) => r.warnings)],
+      warnings: mergeOutsideFrame([...warnings, ...results.flatMap((r) => r.warnings)], results),
       httpStatus: results.at(-1)?.httpStatus ?? null,
       attempts: results.reduce((n, r) => n + r.attempts, 0),
     };

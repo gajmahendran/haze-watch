@@ -129,7 +129,7 @@ describe("FIRMS adapter", () => {
   it("drops malformed and truncated rows, de-duplicates repeats and keeps to the regional frame", () => {
     expect(r.invalidItems).toBe(2);
     expect(r.hotspots).toHaveLength(4);
-    expect(r.warnings.join(" ")).toMatch(/1 detection\(s\) outside the Southeast Asia frame/);
+    expect(r.warnings.join(" ")).toMatch(/1 detection outside the Southeast Asia frame/);
   });
 
   it("reads acquisition time as UTC and keeps the raw confidence", () => {

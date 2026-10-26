@@ -7,6 +7,7 @@ import { COUNTRIES, countryName, getCountry, isCountryCode } from "@/lib/domain/
 import { assessFreshness } from "@/lib/domain/freshness";
 import type { Hotspot, HotspotResponse } from "@/lib/domain/schemas";
 import { formatUtc } from "@/lib/domain/time";
+import { OUTSIDE_FRAME_MARKER } from "@/lib/site";
 import { useApi, useNow } from "@/lib/ui/useApi";
 import { TimeSeriesChart } from "../charts/TimeSeriesChart";
 import { HazeMap, type MapPoint } from "../map/Map";
@@ -136,7 +137,17 @@ export function HotspotExplorer() {
                 </div>
               );
             })}
-            {feeds.flatMap((f) => f.warnings.filter((w) => !w.includes("demo mode")).map((w) => <Note key={w} tone="warn">{w}</Note>))}
+            {feeds.flatMap((f) =>
+              f.warnings
+                .filter((w) => !w.includes("demo mode"))
+                .map((w) =>
+                  w.includes(OUTSIDE_FRAME_MARKER) ? (
+                    <p key={w} className="text-sm text-dim">{w.replace(/^[^:]+: /, "")}</p>
+                  ) : (
+                    <Note key={w} tone="warn">{w}</Note>
+                  ),
+                ),
+            )}
             {feeds.some((f) => f.truncated) ? (
               <Note>The map shows the {all.length.toLocaleString("en-GB")} detections with the highest radiative power. Totals above include all matches.</Note>
             ) : null}

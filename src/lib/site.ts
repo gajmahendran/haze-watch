@@ -25,3 +25,6 @@ export const MAP_TILES: { url: string | null; attribution: string } = {
 
 export const BOUNDARY_ATTRIBUTION =
   'Boundaries: <a href="https://www.naturalearthdata.com/">Natural Earth</a> (public domain), not an endorsement of any claim';
+
+/** Marks the routine FIRMS note about detections beyond the map frame, so the UI can show it quietly. */
+export const OUTSIDE_FRAME_MARKER = "outside the Southeast Asia frame";

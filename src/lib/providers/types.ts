@@ -48,6 +48,8 @@ export interface AirResult extends FetchStats {
 }
 
 export interface HotspotResult extends FetchStats {
+  /** Detections in the source file that fall outside the map frame and were left out (a routine count). */
+  outsideFrame?: number;
   hotspots: Hotspot[];
 }
 
