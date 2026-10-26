@@ -214,7 +214,7 @@ export default function AboutPage() {
               <span className="font-semibold">Boundaries.</span> <span className="text-ash">{BOUNDARY_SOURCE.name}, {BOUNDARY_SOURCE.licence}.</span>
             </li>
             <li>
-              <span className="font-semibold">Base map.</span> <span className="text-ash">© OpenStreetMap contributors © CARTO. Satellite imagery on the hotspot map from NASA EOSDIS GIBS.</span>
+              <span className="font-semibold">Base map.</span> <span className="text-ash">Land and borders drawn from Natural Earth (public domain), so no third-party map service is needed. Satellite imagery on the hotspot map from NASA EOSDIS GIBS.</span>
             </li>
           </ul>
 

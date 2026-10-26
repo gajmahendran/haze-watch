@@ -13,9 +13,15 @@ export function correctionsContact(): string | null {
   return v ? v : null;
 }
 
-export const MAP_TILES = {
-  url: process.env.NEXT_PUBLIC_MAP_TILE_URL || "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
-  attribution:
-    process.env.NEXT_PUBLIC_MAP_TILE_ATTRIBUTION ||
-    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+/**
+ * Optional raster basemap. By default the map draws its own land from Natural Earth (public domain),
+ * so it needs no tile service, key or third-party terms. Set NEXT_PUBLIC_MAP_TILE_URL to a tile
+ * service you are licensed to use to add one underneath.
+ */
+export const MAP_TILES: { url: string | null; attribution: string } = {
+  url: process.env.NEXT_PUBLIC_MAP_TILE_URL?.trim() || null,
+  attribution: process.env.NEXT_PUBLIC_MAP_TILE_ATTRIBUTION?.trim() || "",
 };
+
+export const BOUNDARY_ATTRIBUTION =
+  'Boundaries: <a href="https://www.naturalearthdata.com/">Natural Earth</a> (public domain), not an endorsement of any claim';

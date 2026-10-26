@@ -57,7 +57,7 @@ export function SiteFooter() {
       <div className="wrap border-t border-line py-5 text-xs text-dim">
         Contains information from data.gov.sg made available under the Singapore Open Data Licence v1.0. Malaysian monthly
         series from OpenDOSM (CC BY 4.0). Fire detections from NASA FIRMS. Boundaries from Natural Earth (public domain),
-        not an endorsement of any claim. Map tiles © OpenStreetMap contributors © CARTO.
+        not an endorsement of any claim.
       </div>
     </footer>
   );

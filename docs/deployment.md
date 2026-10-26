@@ -34,7 +34,7 @@ persistence is configured.
 
 - [ ] `npm run check` passes (lint, types, tests, content validation).
 - [ ] `NEXT_PUBLIC_CORRECTIONS_EMAIL` is a monitored address.
-- [ ] Map tile provider terms reviewed (default CARTO basemaps), or `NEXT_PUBLIC_MAP_TILE_URL` set.
+- [ ] Optional: a raster basemap via `NEXT_PUBLIC_MAP_TILE_URL` (and its attribution) if you hold a licence or key for one. By default the map draws Natural Earth land itself.
 - [ ] Singapore Open Data Licence attribution visible (footer and /about already include it).
 - [ ] Malaysia API band labels confirmed against a DOE document; then set
       `bandsVerifiedAgainstSource: true` in `src/lib/domain/indices.ts`.

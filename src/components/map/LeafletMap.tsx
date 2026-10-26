@@ -2,7 +2,7 @@
 
 import L from "leaflet";
 import { useEffect, useRef } from "react";
-import { MAP_TILES } from "@/lib/site";
+import { BOUNDARY_ATTRIBUTION, MAP_TILES } from "@/lib/site";
 
 export interface MapMarker {
   id: string;
@@ -86,25 +86,41 @@ export default function LeafletMap({
   useEffect(() => {
     if (!el.current || map.current) return;
     const m = L.map(el.current, { center, zoom, minZoom: 3, maxZoom: 12, zoomControl: true, worldCopyJump: false, attributionControl: true });
-    L.tileLayer(MAP_TILES.url, { attribution: MAP_TILES.attribution, subdomains: "abcd", maxZoom: 19 }).addTo(m);
+    // Land sits in its own pane below the tile pane, so satellite imagery (a tile layer) draws over it.
+    m.createPane("land").style.zIndex = "150";
+    if (MAP_TILES.url) {
+      L.tileLayer(MAP_TILES.url, { attribution: MAP_TILES.attribution, subdomains: "abcd", maxZoom: 19 }).addTo(m);
+    }
+    m.attributionControl.addAttribution(BOUNDARY_ATTRIBUTION);
     renderer.current = L.canvas({ padding: 0.3 });
     pointLayer.current = L.layerGroup().addTo(m);
     markerLayer.current = L.layerGroup().addTo(m);
     map.current = m;
 
     let cancelled = false;
-    if (outlines) {
-      fetch("/geo/sea-50m.json")
-        .then((r) => (r.ok ? r.json() : null))
+    const load = (url: string) => fetch(url).then((r) => (r.ok ? r.json() : null));
+    // Without a raster basemap, draw neighbouring land and the ten covered countries as plain shapes.
+    if (!MAP_TILES.url) {
+      load("/geo/context-110m.json")
         .then((geo) => {
           if (cancelled || !geo || !map.current) return;
-          L.geoJSON(geo, {
-            interactive: false,
-            style: { color: "#6f8a7a", weight: 0.8, opacity: 0.7, fill: false },
-          }).addTo(map.current);
+          L.geoJSON(geo, { pane: "land", interactive: false, style: { stroke: false, fillColor: "#1a231e", fillOpacity: 1 } }).addTo(map.current);
+        })
+        .catch(() => {});
+    }
+    if (outlines || !MAP_TILES.url) {
+      load("/geo/sea-50m.json")
+        .then((geo) => {
+          if (cancelled || !geo || !map.current) return;
+          if (!MAP_TILES.url) {
+            L.geoJSON(geo, { pane: "land", interactive: false, style: { stroke: false, fillColor: "#203229", fillOpacity: 1 } }).addTo(map.current);
+          }
+          if (outlines) {
+            L.geoJSON(geo, { interactive: false, style: { color: "#6f8a7a", weight: 0.8, opacity: 0.7, fill: false } }).addTo(map.current);
+          }
         })
         .catch(() => {
-          /* outlines are decorative context; the map works without them */
+          /* the land layer is context; markers and detections work without it */
         });
     }
     return () => {

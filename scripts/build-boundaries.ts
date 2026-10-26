@@ -4,6 +4,8 @@
  *
  *   src/lib/geo/data/sea-10m.json  1:10m, used on the server to label hotspots by country
  *   public/geo/sea-50m.json      1:50m, used in the browser to draw outlines
+ *   public/geo/context-110m.json neighbouring land (1:110m), drawn as a muted base so the map needs no
+ *                                third-party tile service
  *
  *   npx tsx scripts/build-boundaries.ts
  *
@@ -72,6 +74,30 @@ function extract(file: string, dp: number, out: string) {
   console.log(`${out}: ${features.length} countries, ${(fs.statSync(out).size / 1024).toFixed(0)} KB`);
 }
 
+/** Neighbouring countries that fall in the map frame, drawn as plain land with no labels or codes. */
+function extractContext(file: string, dp: number, out: string) {
+  const topo = JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), "node_modules", "world-atlas", file), "utf8"),
+  ) as Topology<{ countries: GeometryCollection<{ name: string }> }>;
+  const all = feature(topo, topo.objects.countries) as FeatureCollection<Geometry, { name: string }>;
+  const [w, s, e, n] = [70, -25, 160, 45];
+  const inFrame = (g: Polygon | MultiPolygon) => {
+    const rings = g.type === "Polygon" ? g.coordinates : g.coordinates.flat();
+    return rings.some((r) => r.some(([x, y]) => (x as number) >= w && (x as number) <= e && (y as number) >= s && (y as number) <= n));
+  };
+  const features: Feature<Polygon | MultiPolygon, Record<string, never>>[] = [];
+  for (const f of all.features) {
+    if (ISO_NUMERIC[String(f.id)] || !f.geometry) continue;
+    if (f.geometry.type !== "Polygon" && f.geometry.type !== "MultiPolygon") continue;
+    const geometry = simplifyGeometry(f.geometry, dp);
+    if (inFrame(geometry)) features.push({ type: "Feature", properties: {}, geometry });
+  }
+  const fc = { type: "FeatureCollection", source: `Natural Earth via world-atlas/${file}`, features };
+  fs.writeFileSync(out, JSON.stringify(fc));
+  console.log(`${out}: ${features.length} neighbouring areas, ${(fs.statSync(out).size / 1024).toFixed(0)} KB`);
+}
+
 const dir = path.join(process.cwd(), "src", "lib", "geo", "data");
 extract("countries-10m.json", 3, path.join(dir, "sea-10m.json"));
 extract("countries-50m.json", 2, path.join(process.cwd(), "public", "geo", "sea-50m.json"));
+extractContext("countries-110m.json", 2, path.join(process.cwd(), "public", "geo", "context-110m.json"));
