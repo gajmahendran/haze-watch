@@ -85,7 +85,10 @@ export default function LeafletMap({
   // Create the map once.
   useEffect(() => {
     if (!el.current || map.current) return;
-    const m = L.map(el.current, { center, zoom, minZoom: 3, maxZoom: 12, zoomControl: true, worldCopyJump: false, attributionControl: true });
+    const m = L.map(el.current, { center, zoom, minZoom: 3, maxZoom: 12, zoomControl: true, worldCopyJump: false, attributionControl: true, scrollWheelZoom: false });
+    // Scrolling the page over the map should scroll the page. Wheel zoom turns on once the map is clicked.
+    m.on("click focus", () => m.scrollWheelZoom.enable());
+    m.on("mouseout blur", () => m.scrollWheelZoom.disable());
     // Land sits in its own pane below the tile pane, so satellite imagery (a tile layer) draws over it.
     m.createPane("land").style.zIndex = "150";
     if (MAP_TILES.url) {
